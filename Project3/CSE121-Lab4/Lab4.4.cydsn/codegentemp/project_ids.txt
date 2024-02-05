@@ -1,0 +1,26 @@
+C:\Users\guill\Escritorio\CSE121\Lab1.0.cydsn\Lab1.0.cyprj|e1bc1177-1820-4b2d-81f3-2e700afe4695
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|512fcece-2664-4be1-b49d-20ef9819a05e
+C:\Users\guill\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|db6f3251-d274-448d-ad8e-171f2386aa2c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|121fbf3b-9d4d-4634-819b-ec57b9d0a391
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d17e3d12-a76a-4ed5-91d3-816311b3d1c4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|6cfe8d80-8da2-4328-abe2-3fa1de084ba1
+C:\Users\guill\Escritorio\CSE121\Lab1.1.cydsn\Lab1.1.cyprj|39b66259-956f-45e7-b032-8df7d4f16c97
+C:\Users\guill\Escritorio\CSE121\Lab1.2.cydsn\Lab1.2.cyprj|220907b7-8128-4122-9120-b32f989ec99d
+C:\Users\guill\Escritorio\CSE121\Lab1.3.cydsn\Lab1.3.cyprj|10aedcdd-72ab-4537-b80b-faed58095d06
+C:\Users\guill\Escritorio\CSE121\Lab1.4.cydsn\Lab1.4.cyprj|85a7cb13-183e-40d6-9624-d7a0aa2ad948
+C:\Users\guill\Escritorio\CSE121\Lab2.1.cydsn\Lab2.1.cyprj|6d7e7f29-620b-4291-ba65-2ad19b1ed5d8
+C:\Users\guill\Escritorio\CSE121\Lab2.2.cydsn\Lab2.2.cyprj|a165a512-7bc6-4fc4-9f77-8603316ac5a1
+C:\Users\guill\Escritorio\CSE121\Lab2.3.cydsn\Lab2.3.cyprj|c80409ad-8035-4272-9664-295808c2f3f3
+C:\Users\guill\Escritorio\CSE121\Lab2.4.cydsn\Lab2.4.cyprj|a6b05ec2-08d0-42ba-b2dd-eb5370abe31f
+C:\Users\guill\Escritorio\CSE121\Lab3.1.cydsn\Lab3.1.cyprj|2b66c280-d33c-499d-ad9b-9b8e3843857d
+C:\Users\guill\Escritorio\CSE121\Lab3.2.cydsn\Lab3.2.cyprj|84fdb776-919a-4377-bf56-6bb995cad59a
+C:\Users\guill\Escritorio\CSE121\Lab3.3.cydsn\Lab3.3.cyprj|626794b6-18f9-41ae-97be-aa6a0b7a1a11
+C:\Users\guill\Escritorio\CSE121\Lab3.4.cydsn\Lab3.4.cyprj|41916192-7022-406a-a4af-fd282e759f26
+C:\Users\guill\Escritorio\CSE121\Lab4.1.cydsn\Lab4.1.cyprj|c912f49b-c0fb-40f9-95d1-8fa7f8ea2b83
+C:\Users\guill\Escritorio\CSE121\Lab4.3.cydsn\Lab4.3.cyprj|f1f0f19b-9c1e-4201-8420-0abb7d3bb658
+C:\Users\guill\Escritorio\CSE121\Lab4.2.cydsn\Lab4.2.cyprj|fef3dbe1-f9ef-4198-9b44-ca207e0a7ce6
+C:\Users\guill\Escritorio\CSE121\BLE_Battery_Level01.cydsn\BLE_Battery_Level01.cyprj|d246182b-b269-402f-b4ae-c885b9482d04
+C:\Users\guill\Escritorio\CSE121\BLE_Blood_Pressure_Sensor01.cydsn\BLE_Blood_Pressure_Sensor01.cyprj|4de193cf-266f-4d46-a194-9e1a4c7a8648
+C:\Users\guill\Escritorio\CSE121\CE216795_DualCoreSharedMemory01.cydsn\CE216795_DualCoreSharedMemory01.cyprj|83fddf11-42d7-4e86-8f70-72da0240de61
+C:\Users\guill\Escritorio\CSE121\Lab4.4.cydsn\Lab4.4.cyprj|84b0adf0-e082-4be1-9e23-1ac3e5a6cee0
+C:\Users\guill\Escritorio\CSE121\Lab4.4_BackUP.cydsn\Lab4.4_BackUP.cyprj|1025c444-a38f-4c79-870e-c2e1082f3da0

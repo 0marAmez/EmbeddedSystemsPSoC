@@ -1,0 +1,3466 @@
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main_cm0p.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB240:
+  27              		.file 1 "main_cm0p.c"
+   1:main_cm0p.c   **** /* ========================================
+   2:main_cm0p.c   ****  *
+   3:main_cm0p.c   ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main_cm0p.c   ****  * All Rights Reserved
+   5:main_cm0p.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main_cm0p.c   ****  *
+   7:main_cm0p.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main_cm0p.c   ****  * WHICH IS THE PROPERTY OF your company.
+   9:main_cm0p.c   ****  *
+  10:main_cm0p.c   ****  * ========================================
+  11:main_cm0p.c   **** */
+  12:main_cm0p.c   **** #include "project.h"
+  13:main_cm0p.c   **** 
+  14:main_cm0p.c   **** int main(void)
+  15:main_cm0p.c   **** {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 70B5     		push	{r4, r5, r6, lr}
+  34              		.cfi_def_cfa_offset 16
+  35              		.cfi_offset 4, -16
+  36              		.cfi_offset 5, -12
+  37              		.cfi_offset 6, -8
+  38              		.cfi_offset 14, -4
+  39              	.LBB14:
+  40              	.LBB15:
+  41              		.file 2 "Generated_Source\\PSoC6\\pdl\\cmsis/include/cmsis_gcc.h"
+   1:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /**************************************************************************//**
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 2
+
+
+   2:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
+   4:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @version  V5.0.3
+   5:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @date     16. January 2018
+   6:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  ******************************************************************************/
+   7:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /*
+   8:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Copyright (c) 2009-2017 ARM Limited. All rights reserved.
+   9:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  10:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
+  11:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  12:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  13:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
+  14:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * You may obtain a copy of the License at
+  15:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  16:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
+  17:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  18:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
+  19:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  20:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  21:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
+  22:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * limitations under the License.
+  23:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+  24:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  25:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  26:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #define __CMSIS_GCC_H
+  27:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  28:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ignore some GCC warnings */
+  29:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  30:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  31:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  32:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  33:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  34:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* Fallback for __has_builtin */
+  35:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef __has_builtin
+  36:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
+  37:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  38:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  39:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* CMSIS compiler specific defines */
+  40:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __ASM
+  41:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __ASM                                  __asm
+  42:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  43:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __INLINE
+  44:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __INLINE                               inline
+  45:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  46:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
+  47:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
+  48:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  49:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __STATIC_FORCEINLINE                 
+  50:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+  51:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif                                           
+  52:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __NO_RETURN
+  53:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
+  54:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  55:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __USED
+  56:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __USED                                 __attribute__((used))
+  57:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  58:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __WEAK
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 3
+
+
+  59:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
+  60:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  61:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED
+  62:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
+  63:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  64:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
+  65:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
+  66:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  67:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
+  68:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
+  69:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  70:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32        /* deprecated */
+  71:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  72:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  73:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  74:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+  75:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  76:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
+  77:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  78:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
+  79:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  80:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  81:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  82:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
+  83:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  84:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
+  85:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  86:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
+  87:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  88:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  89:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  90:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_READ { uint16_t v; };
+  91:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+  92:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_READ(addr)          (((const struct T_UINT16_READ *)(const void *)(add
+  93:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  94:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
+  95:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+  96:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+  97:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+  98:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
+  99:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 100:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
+ 101:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+ 102:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
+ 103:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+ 104:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+ 105:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
+ 106:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_READ { uint32_t v; };
+ 107:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
+ 108:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_READ(addr)          (((const struct T_UINT32_READ *)(const void *)(add
+ 109:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+ 110:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __ALIGNED
+ 111:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
+ 112:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+ 113:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __RESTRICT
+ 114:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __RESTRICT                             __restrict
+ 115:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 4
+
+
+ 116:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+ 117:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+ 118:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+ 119:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+ 120:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+ 121:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   @{
+ 122:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+ 123:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+ 124:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /**
+ 125:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+ 126:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+ 127:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 128:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+ 129:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
+ 130:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** {
+ 131:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+  42              		.loc 2 131 0
+  43              		.syntax divided
+  44              	@ 131 "Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h" 1
+  45 0002 62B6     		cpsie i
+  46              	@ 0 "" 2
+  47              		.thumb
+  48              		.syntax unified
+  49              	.L2:
+  50              	.LVL0:
+  51              	.LBE15:
+  52              	.LBE14:
+  53              	.LBB16:
+  54              	.LBB17:
+  55              		.file 3 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/gpio/cy_gpio.h"
+   1:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \file cy_gpio.h
+   3:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \version 1.20
+   4:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+   5:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Provides an API declaration of the GPIO driver
+   6:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+   7:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ********************************************************************************
+   8:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \copyright
+   9:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Copyright 2016-2018, Cypress Semiconductor Corporation. All rights reserved.
+  10:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+  14:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+  15:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+  16:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio
+  17:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+  18:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * The GPIO driver provides an API to configure and access device Input/Output pins.
+  19:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  20:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * The functions and other declarations used in this driver are in cy_gpio.h. 
+  21:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * You can include cy_pdl.h (ModusToolbox only) to get access to all functions 
+  22:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * and declarations in the PDL.
+  23:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  24:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * IO pins include all general purpose types such as GPIO, SIO, HSIO, AUXIO, and
+  25:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * their variants.
+  26:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  27:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Initialization can be performed either at the port level or by configuring the
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 5
+
+
+  28:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * individual pins. For efficient use of code space, port
+  29:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * configuration should be used in the field. Refer to the product device header files 
+  30:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * for the list of supported ports and pins.
+  31:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 
+  32:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - Single pin configuration is performed by using \ref Cy_GPIO_Pin_FastInit 
+  33:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   (provide specific values) or \ref Cy_GPIO_Pin_Init (provide a filled
+  34:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   cy_stc_gpio_pin_config_t structure).
+  35:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - An entire port can be configured using \ref Cy_GPIO_Port_Init. Provide a filled 
+  36:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   cy_stc_gpio_prt_config_t structure. The values in the structure are 
+  37:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   bitfields representing the desired value for each pin in the port.
+  38:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - Pin configuration and management is based on the port address and pin number.
+  39:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   \ref Cy_GPIO_PortToAddr function can optionally be used to calculate the port
+  40:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   address from the port number at run-time.
+  41:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  42:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Once the pin/port initialization is complete, each pin can be accessed by 
+  43:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * specifying the port (GPIO_PRT_Type) and the pin (0-7) in the provided API 
+  44:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * functions.
+  45:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  46:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \section group_gpio_configuration Configuration Considerations
+  47:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  48:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 1. Pin multiplexing is controlled through the High-Speed IO Matrix (HSIOM) selection.
+  49:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    This allows the pin to connect to signal sources/sinks throughout the device,
+  50:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    as defined by the pin HSIOM selection options (en_hsiom_sel_t).
+  51:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 2. All pins are initialized to High-Z drive mode with HSIOM connected to CPU (SW
+  52:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    control digital pin only) at Power-On-Reset(POR).
+  53:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 3. Some API functions perform read-modify-write operations on shared port
+  54:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    registers. These functions are not thread safe and care must be taken when
+  55:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    called by the application.
+  56:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 4. Digital input buffer provides a high-impedance buffer for the external 
+  57:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    digital input. The input buffer is connected to the HSIOM for routing to 
+  58:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    the CPU port registers and selected peripheral. Enabling the input 
+  59:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    buffer provides possibility to read the pin state via the CPU.
+  60:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    If pin is connected to an analog signal, the input buffer should be 
+  61:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    disabled to avoid crowbar currents. For more information refer to device 
+  62:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    TRM and the device datasheet.
+  63:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  64:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Multiple pins on a port can be updated using direct port register writes with an
+  65:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * appropriate port mask. An example is shown below, highlighting the different ways of 
+  66:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * configuring Port 1 pins using:
+  67:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * 
+  68:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - Port output data register
+  69:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - Port output data set register
+  70:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * - Port output data clear register
+  71:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  72:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c Cy_GPIO_Snippet
+  73:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  74:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \section group_gpio_more_information More Information
+  75:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  76:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Refer to the technical reference manual (TRM) and the device datasheet.
+  77:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  78:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \section group_gpio_MISRA MISRA-C Compliance
+  79:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * The GPIO driver has the following specific deviations:
+  80:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+  81:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * <table class="doxtable">
+  82:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+  83:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <th>MISRA Rule</th>
+  84:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <th>Rule Class (Required/Advisory)</th>
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 6
+
+
+  85:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <th>Rule Description</th>
+  86:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <th>Description of Deviation(s)</th>
+  87:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+  88:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+  89:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>11.4</td>
+  90:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>A</td>
+  91:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>A cast should not be performed between a pointer to object type and
+  92:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         a different pointer to object type.</td>
+  93:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td> This code is safe because the elements of both GPIO_PRT_V1_Type and GPIO_PRT_V2_Type 
+  94:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *          types have identical alignment.</td>
+  95:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+  96:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+  97:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>16.7</td>
+  98:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>A</td>
+  99:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>A pointer parameter in a function prototype should be declared as pointer 
+ 100:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         to const if the pointer is not used to modify the addressed object.</td>
+ 101:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>The objects pointed to by the base addresses of the GPIO port are not always modified.
+ 102:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         While a const qualifier can be used in select scenarios, it brings little benefit
+ 103:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         in adding this to the affected functions. </td>
+ 104:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 105:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * </table>
+ 106:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 107:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \section group_gpio_changelog Changelog
+ 108:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * <table class="doxtable">
+ 109:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
+ 110:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 111:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td rowspan="3">1.20</td>
+ 112:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Flattened the organization of the driver source code into the single source directory and
+ 113:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Driver library directory-structure simplification.</td>
+ 114:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 115:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 116:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Added the functions for configuring the AMux bus splitter switch cells:
+ 117:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     - \ref Cy_GPIO_SetAmuxSplit
+ 118:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     - \ref Cy_GPIO_GetAmuxSplit
+ 119:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     </td>
+ 120:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Added a new functionality related to AMux bus.</td>
+ 121:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 122:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 123:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Added register access layer. Use register access macros instead
+ 124:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         of direct register access using dereferenced pointers.</td>
+ 125:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Makes register access device-independent, so that the PDL does 
+ 126:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         not need to be recompiled for each supported part number.</td>
+ 127:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 128:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 129:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>1.10.1</td>
+ 130:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Updated description for the functions: \ref Cy_GPIO_GetInterruptStatus, 
+ 131:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         \ref Cy_GPIO_GetInterruptMask, \ref Cy_GPIO_GetInterruptStatusMasked.
+ 132:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 133:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         Minor documentation edits.
+ 134:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     </td>
+ 135:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Documentation update and clarification</td>
+ 136:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 137:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 138:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>1.10</td>
+ 139:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Added input parameter validation to the API functions</td>
+ 140:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td></td>
+ 141:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 7
+
+
+ 142:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
+ 143:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>1.0</td>
+ 144:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Initial version</td>
+ 145:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td></td>
+ 146:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
+ 147:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * </table>
+ 148:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 149:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_macros Macros
+ 150:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_functions Functions
+ 151:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 152:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   \defgroup group_gpio_functions_init       Initialization Functions
+ 153:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   \defgroup group_gpio_functions_gpio       GPIO Functions
+ 154:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   \defgroup group_gpio_functions_sio        SIO Functions
+ 155:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   \defgroup group_gpio_functions_interrupt  Port Interrupt Functions
+ 156:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \}
+ 157:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_data_structures Data Structures
+ 158:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_enums Enumerated Types
+ 159:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 160:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 161:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #if !defined(CY_GPIO_H)
+ 162:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_H
+ 163:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 164:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #include <stddef.h>
+ 165:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #include "cy_device.h"
+ 166:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #include "cy_device_headers.h"
+ 167:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #include "cy_syslib.h"
+ 168:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 169:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #if defined(__cplusplus)
+ 170:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** extern "C" {
+ 171:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #endif
+ 172:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 173:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \addtogroup group_gpio_macros
+ 174:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 175:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 176:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 177:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** Driver major version */
+ 178:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRV_VERSION_MAJOR       1
+ 179:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 180:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** Driver minor version */
+ 181:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRV_VERSION_MINOR       20
+ 182:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 183:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** GPIO driver ID */
+ 184:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_ID CY_PDL_DRV_ID(0x16U)
+ 185:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 186:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_macros */
+ 187:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 188:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 189:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
+ 190:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *       Enumerations
+ 191:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
+ 192:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 193:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_enums
+ 194:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 195:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 196:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 197:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** GPIO Driver error codes */
+ 198:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** typedef enum 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 8
+
+
+ 199:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 200:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_SUCCESS   = 0x00U,                                    /**< Returned successful */
+ 201:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_BAD_PARAM = CY_GPIO_ID | CY_PDL_STATUS_ERROR | 0x01U, /**< Bad parameter was passed */
+ 202:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** } cy_en_gpio_status_t;
+ 203:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 204:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** AMux switch open/close config */
+ 205:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** typedef enum
+ 206:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 207:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_OPENALL,   /**< Open ground switch. Open right switch. Open left switch */
+ 208:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_L,         /**< Open ground switch. Open right switch. Close left switch */
+ 209:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_R,         /**< Open ground switch. Close right switch. Open left switch */
+ 210:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_LR,        /**< Open ground switch. Close right switch. Close left switch */
+ 211:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_G,         /**< Close ground switch. Open right switch. Open left switch */
+ 212:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_GL,        /**< Close ground switch. Open right switch. Close left switch */
+ 213:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_GR,        /**< Close ground switch. Close right switch. Open left switch */
+ 214:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_GLR,       /**< Close ground switch. Close right switch. Close left switch */
+ 215:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }cy_en_gpio_amuxconnect_t;
+ 216:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 217:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 218:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * AMux Bus selection
+ 219:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 220:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** typedef enum
+ 221:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 222:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUXBUSA,       /**< AMuxBus A */
+ 223:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUXBUSB        /**< AMuxBus B */
+ 224:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }cy_en_gpio_amuxselect_t;
+ 225:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 226:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_enums */
+ 227:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 228:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 229:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
+ 230:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *       Configuration Structures
+ 231:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
+ 232:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 233:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 234:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_data_structures
+ 235:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 236:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 237:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 238:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** This structure is used to initialize a port of GPIO pins */
+ 239:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** typedef struct 
+ 240:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 241:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t out;           /**< Initial output data for the IO pins in the port */
+ 242:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t intrMask;      /**< Interrupt enable mask for the port interrupt */
+ 243:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t intrCfg;       /**< Port pin interrupt edge detection configuration */
+ 244:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t cfg;           /**< Port pin drive modes and input buffer enable configuration */
+ 245:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t cfgIn;         /**< Port pin input buffer configuration */
+ 246:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t cfgOut;        /**< Port pin output buffer configuration */
+ 247:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t cfgSIO;        /**< Port SIO pins configuration */
+ 248:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t sel0Active;    /**< HSIOM selection for port pins 0,1,2,3 */
+ 249:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t sel1Active;    /**< HSIOM selection for port pins 4,5,6,7 */
+ 250:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** } cy_stc_gpio_prt_config_t;
+ 251:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 252:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** This structure is used to initialize a single GPIO pin */
+ 253:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** typedef struct
+ 254:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 255:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t outVal;         /**< Pin output state */
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 9
+
+
+ 256:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t driveMode;      /**< Drive mode */
+ 257:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     en_hsiom_sel_t hsiom;    /**< HSIOM selection */
+ 258:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t intEdge;        /**< Interrupt Edge type */
+ 259:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t intMask;        /**< Interrupt enable mask */
+ 260:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t vtrip;          /**< Input buffer voltage trip type */
+ 261:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t slewRate;       /**< Output buffer slew rate */
+ 262:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t driveSel;       /**< Drive strength */
+ 263:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t vregEn;         /**< SIO pair output buffer mode */
+ 264:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t ibufMode;       /**< SIO pair input buffer mode */
+ 265:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t vtripSel;       /**< SIO pair input buffer trip point */
+ 266:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t vrefSel;        /**< SIO pair reference voltage for input buffer trip point */
+ 267:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t vohSel;         /**< SIO pair regulated voltage output level */
+ 268:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** } cy_stc_gpio_pin_config_t;
+ 269:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 270:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_data_structures */
+ 271:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 272:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
+ 273:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *        Constants
+ 274:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
+ 275:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 276:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \cond INTERNAL */
+ 277:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 278:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* General Constants */
+ 279:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_HALF                       (4UL)      /**< Half-way point of a GPIO port */
+ 280:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_DEINIT                     (0UL)      /**< De-init value for port registers */
+ 281:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 282:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* GPIO Masks */
+ 283:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_HSIOM_MASK                     (0x1FUL)   /**< HSIOM selection mask */
+ 284:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_OUT_MASK                       (0x01UL)   /**< Single pin mask for OUT register */
+ 285:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IN_MASK                        (0x01UL)   /**< Single pin mask for IN register */
+ 286:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_DM_MASK                    (0x0FUL)   /**< Single pin mask for drive mode in CF
+ 287:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_IN_VTRIP_SEL_MASK          (0x01UL)   /**< Single pin mask for VTRIP selection 
+ 288:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_OUT_SLOW_MASK              (0x01UL)   /**< Single pin mask for slew rate in CFG
+ 289:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_OUT_DRIVE_SEL_MASK         (0x03UL)   /**< Single pin mask for drive strength i
+ 290:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_STATUS_MASK               (0x01UL)   /**< Single pin mask for interrupt status
+ 291:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_EN_MASK                   (0x01UL)   /**< Single pin mask for interrupt status
+ 292:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_MASKED_MASK               (0x01UL)   /**< Single pin mask for masked interrupt
+ 293:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_SET_MASK                  (0x01UL)   /**< Single pin mask for setting the inte
+ 294:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_EDGE_MASK                 (0x03UL)   /**< Single pin mask for interrupt edge t
+ 295:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_FLT_EDGE_MASK             (0x07UL)   /**< Single pin mask for setting filtered
+ 296:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 297:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* SIO Masks */
+ 298:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VREG_EN_MASK                   (0x01UL)   /**< Single SIO pin mask for voltage regu
+ 299:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IBUF_MASK                      (0x01UL)   /**< Single SIO pin mask for input buffer
+ 300:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IBUF_SHIFT                     (0x01UL)   /**< Single SIO pin shift for input buffe
+ 301:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VTRIP_SEL_MASK                 (0x01UL)   /**< Single SIO pin mask for the input bu
+ 302:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VTRIP_SEL_SHIFT                (0x02UL)   /**< Single SIO pin shift for the input b
+ 303:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VREF_SEL_MASK                  (0x03UL)   /**< Single SIO pin mask for voltage refe
+ 304:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VREF_SEL_SHIFT                 (0x03UL)   /**< Single SIO pin shift for voltage ref
+ 305:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VOH_SEL_MASK                   (0x07UL)   /**< Single SIO pin mask for VOH */
+ 306:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VOH_SEL_SHIFT                  (0x05UL)   /**< Single SIO pin shift for VOH */
+ 307:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 308:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* Special mask for SIO pin pair setting */
+ 309:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_SIO_ODD_PIN_MASK               (0x00FEUL) /**< SIO pin pair selection mask */
+ 310:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_SIO_PIN_MASK                   (0x00FFUL) /**< SIO pin pair mask */
+ 311:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 312:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* Offsets */
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 10
+
+
+ 313:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_HSIOM_OFFSET                   (3UL)      /**< Offset for HSIOM */
+ 314:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRIVE_MODE_OFFSET              (2UL)      /**< Offset for Drive mode */
+ 315:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INBUF_OFFSET                   (3UL)      /**< Offset for input buffer */
+ 316:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_OUT_DRIVE_OFFSET           (16UL)     /**< Offset for drive strength */
+ 317:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_CFG_OFFSET                (1UL)      /**< Offset for interrupt config */
+ 318:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_FILT_OFFSET               (18UL)     /**< Offset for filtered interrupt config
+ 319:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_CFG_SIO_OFFSET                 (2UL)      /**< Offset for SIO config */
+ 320:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 321:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* Parameter validation constants */
+ 322:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PINS_MAX                       (8UL)      /**< Number of pins in the port */
+ 323:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_PINS_MASK                  (0x0000000FFUL)
+ 324:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_INTR_CFG_EDGE_SEL_MASK     (GPIO_PRT_INTR_CFG_EDGE0_SEL_Msk | \
+ 325:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE1_SEL_Msk | \
+ 326:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE2_SEL_Msk | \
+ 327:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE3_SEL_Msk | \
+ 328:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE4_SEL_Msk | \
+ 329:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE5_SEL_Msk | \
+ 330:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE6_SEL_Msk | \
+ 331:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE7_SEL_Msk)
+ 332:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_INTR_CFG_RANGE_MASK        (CY_GPIO_PRT_INTR_CFG_EDGE_SEL_MASK | \
+ 333:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_FLT_EDGE_SEL_Msk | \
+ 334:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_FLT_SEL_Msk)
+ 335:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_INT_MASK_MASK              (0x0000001FFUL)
+ 336:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_PRT_SEL_ACTIVE_MASK            (0x1FFFFFFFUL)
+ 337:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 338:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define GPIO_MAX_SPLIT_CELL_SEGMENTS           (9U)
+ 339:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 340:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /* Parameter validation macros */
+ 341:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_PIN_VALID(pinNum)           (CY_GPIO_PINS_MAX > (pinNum))
+ 342:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_FILTER_PIN_VALID(pinNum)    (CY_GPIO_PINS_MAX >= (pinNum))
+ 343:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_VALUE_VALID(outVal)         (1UL >= (outVal))
+ 344:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_DM_VALID(driveMode)         (0U == ((driveMode) & (uint32_t)~CY_GPIO_CFG_DM_MASK
+ 345:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 346:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_HSIOM_VALID(hsiom)          (0U == ((hsiom) & (uint32_t)~CY_GPIO_HSIOM_MASK))
+ 347:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 348:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_INT_EDGE_VALID(intEdge)     ((CY_GPIO_INTR_DISABLE  == (intEdge)) || \
+ 349:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_INTR_RISING   == (intEdge)) || \
+ 350:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_INTR_FALLING  == (intEdge)) || \
+ 351:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_INTR_BOTH     == (intEdge)))
+ 352:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 353:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_DRIVE_SEL_VALID(driveSel)   ((CY_GPIO_DRIVE_FULL    == (driveSel)) || \
+ 354:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_DRIVE_1_2     == (driveSel)) || \
+ 355:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_DRIVE_1_4     == (driveSel)) || \
+ 356:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_DRIVE_1_8     == (driveSel)))
+ 357:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 358:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_VREF_SEL_VALID(vrefSel)     ((CY_SIO_VREF_PINREF    == (vrefSel)) || \
+ 359:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VREF_1_2V      == (vrefSel)) || \
+ 360:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VREF_AMUX_A    == (vrefSel)) || \
+ 361:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VREF_AMUX_B    == (vrefSel)))
+ 362:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 363:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_VOH_SEL_VALID(vrefSel)      ((CY_SIO_VOH_1_00       == (vrefSel)) || \
+ 364:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_1_25       == (vrefSel)) || \
+ 365:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_1_49       == (vrefSel)) || \
+ 366:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_1_67       == (vrefSel)) || \
+ 367:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_2_08       == (vrefSel)) || \
+ 368:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_2_50       == (vrefSel)) || \
+ 369:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_2_78       == (vrefSel)) || \
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 11
+
+
+ 370:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_SIO_VOH_4_16       == (vrefSel)))
+ 371:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                    
+ 372:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_PIN_BIT_VALID(pinBit)       (0U == ((pinBit) & (uint32_t)~CY_GPIO_PRT_PINS_MASK)
+ 373:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_INTR_CFG_VALID(intrCfg)     (0U == ((intrCfg) & (uint32_t)~CY_GPIO_PRT_INTR_CFG_
+ 374:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_INTR_MASK_VALID(intrMask)   (0U == ((intrMask) & (uint32_t)~CY_GPIO_PRT_INT_MASK
+ 375:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_SEL_ACT_VALID(selActive)    (0U == ((selActive) & (uint32_t)~CY_GPIO_PRT_SEL_ACT
+ 376:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 377:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_AMUX_SPLIT_VALID(switchCtrl)       (((uint32_t) (switchCtrl)) < GPIO_MAX_SPLIT_C
+ 378:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 379:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_AMUX_CONNECT_VALID(amuxConnect)    ((CY_GPIO_AMUX_OPENALL == (amuxConnect)) || \
+ 380:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_L       == (amuxConnect)) || \
+ 381:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_R       == (amuxConnect)) || \
+ 382:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_LR      == (amuxConnect)) || \
+ 383:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_G       == (amuxConnect)) || \
+ 384:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_GL      == (amuxConnect)) || \
+ 385:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_GR      == (amuxConnect)) || \
+ 386:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_GLR     == (amuxConnect)))
+ 387:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 388:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_AMUX_SELECT_VALID(amuxBus)       ((CY_GPIO_AMUXBUSA       == (amuxBus)) || \
+ 389:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                      (CY_GPIO_AMUXBUSB       == (amuxBus)))
+ 390:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \endcond */
+ 391:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 392:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 393:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
+ 394:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *        Function Constants
+ 395:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
+ 396:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 397:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 398:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_macros
+ 399:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 400:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 401:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 402:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 403:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_driveModes Pin drive mode
+ 404:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 405:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the drive mode of the pin.
+ 406:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 407:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_ANALOG                      (0x00UL) /**< Analog High-Z. Input buffer off */
+ 408:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLUP_IN_OFF               (0x02UL) /**< Resistive Pull-Up. Input buffer off */
+ 409:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLDOWN_IN_OFF             (0x03UL) /**< Resistive Pull-Down. Input buffer off 
+ 410:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_OD_DRIVESLOW_IN_OFF         (0x04UL) /**< Open Drain, Drives Low. Input buffer o
+ 411:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_OD_DRIVESHIGH_IN_OFF        (0x05UL) /**< Open Drain, Drives High. Input buffer 
+ 412:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_STRONG_IN_OFF               (0x06UL) /**< Strong Drive. Input buffer off */
+ 413:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLUP_DOWN_IN_OFF          (0x07UL) /**< Resistive Pull-Up/Down. Input buffer o
+ 414:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_HIGHZ                       (0x08UL) /**< Digital High-Z. Input buffer on */
+ 415:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLUP                      (0x0AUL) /**< Resistive Pull-Up. Input buffer on */
+ 416:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLDOWN                    (0x0BUL) /**< Resistive Pull-Down. Input buffer on *
+ 417:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_OD_DRIVESLOW                (0x0CUL) /**< Open Drain, Drives Low. Input buffer o
+ 418:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_OD_DRIVESHIGH               (0x0DUL) /**< Open Drain, Drives High. Input buffer 
+ 419:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_STRONG                      (0x0EUL) /**< Strong Drive. Input buffer on */
+ 420:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_PULLUP_DOWN                 (0x0FUL) /**< Resistive Pull-Up/Down. Input buffer o
+ 421:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 422:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 423:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 424:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_vtrip Voltage trip mode
+ 425:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 426:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the voltage trip type on the pin.
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 12
+
+
+ 427:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 428:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VTRIP_CMOS                     (0x00UL) /**< Input buffer compatible with CMOS and 
+ 429:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_VTRIP_TTL                      (0x01UL) /**< Input buffer compatible with TTL and M
+ 430:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 431:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 432:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 433:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_slewRate Slew Rate Mode
+ 434:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 435:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the slew rate of the pin.
+ 436:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 437:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_SLEW_FAST                      (0x00UL) /**< Fast slew rate */
+ 438:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_SLEW_SLOW                      (0x01UL) /**< Slow slew rate */
+ 439:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 440:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 441:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 442:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_driveStrength Pin drive strength
+ 443:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 444:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the drive strength of the pin.
+ 445:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 446:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRIVE_FULL                     (0x00UL) /**< Full drive strength: Max drive current
+ 447:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRIVE_1_2                      (0x01UL) /**< 1/2 drive strength: 1/2 drive current 
+ 448:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRIVE_1_4                      (0x02UL) /**< 1/4 drive strength: 1/4 drive current 
+ 449:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRIVE_1_8                      (0x03UL) /**< 1/8 drive strength: 1/8 drive current 
+ 450:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 451:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 452:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 453:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_interruptTrigger Interrupt trigger type
+ 454:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 455:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the interrupt trigger type on the pin.
+ 456:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 457:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_DISABLE                   (0x00UL) /**< Disable the pin interrupt generation *
+ 458:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_RISING                    (0x01UL) /**< Rising-Edge interrupt */
+ 459:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_FALLING                   (0x02UL) /**< Falling-Edge interrupt */
+ 460:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_BOTH                      (0x03UL) /**< Both-Edge interrupt */
+ 461:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 462:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 463:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 464:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioVreg SIO output buffer mode
+ 465:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 466:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the SIO output buffer mode on the pin.
+ 467:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 468:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREG_UNREGULATED                (0x00UL) /**< Unregulated output buffer */
+ 469:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREG_REGULATED                  (0x01UL) /**< Regulated output buffer */
+ 470:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 471:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 472:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 473:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioIbuf SIO input buffer mode
+ 474:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 475:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the SIO input buffer mode on the pin.
+ 476:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 477:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_IBUF_SINGLEENDED                (0x00UL) /**< Single ended input buffer */
+ 478:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_IBUF_DIFFERENTIAL               (0x01UL) /**< Differential input buffer */
+ 479:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 480:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 481:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 482:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioVtrip SIO input buffer trip-point
+ 483:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 13
+
+
+ 484:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the SIO input buffer trip-point of the pin.
+ 485:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 486:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VTRIP_CMOS                      (0x00UL) /**< CMOS input buffer (single-ended) */
+ 487:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VTRIP_TTL                       (0x01UL) /**< TTL input buffer (single-ended) */
+ 488:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VTRIP_0_5VDDIO_0_5VOH           (0x00UL) /**< 0.5xVddio or 0.5xVoh (differential) */
+ 489:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VTRIP_0_4VDDIO_1_0VREF          (0x01UL) /**< 0.4xVddio or 0.4xVoh (differential) */
+ 490:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 491:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 492:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 493:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioVref SIO reference voltage for input buffer trip-point
+ 494:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 495:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the reference voltage of SIO input buffer trip-point.
+ 496:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 497:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_PINREF                     (0x00UL) /**< Vref from analog pin */
+ 498:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_1_2V                       (0x01UL) /**< Vref from internal 1.2V reference */
+ 499:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_AMUX_A                     (0x02UL) /**< Vref from AMUXBUS_A */
+ 500:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_AMUX_B                     (0x03UL) /**< Vref from AMUXBUS_B */
+ 501:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 502:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 503:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 504:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioVoh Regulated output voltage level (Voh) and input buffer trip-point of a
+ 505:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 506:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the Voh and input buffer trip-point of an SIO pair
+ 507:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 508:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_1_00                        (0x00UL) /**< Voh = 1 x Reference */
+ 509:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_1_25                        (0x01UL) /**< Voh = 1.25 x Reference */
+ 510:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_1_49                        (0x02UL) /**< Voh = 1.49 x Reference */
+ 511:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_1_67                        (0x03UL) /**< Voh = 1.67 x Reference */
+ 512:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_2_08                        (0x04UL) /**< Voh = 2.08 x Reference */
+ 513:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_2_50                        (0x05UL) /**< Voh = 2.50 x Reference */
+ 514:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_2_78                        (0x06UL) /**< Voh = 2.78 x Reference */
+ 515:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VOH_4_16                        (0x07UL) /**< Voh = 4.16 x Reference */
+ 516:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
+ 517:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 518:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_macros */
+ 519:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 520:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
+ 521:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *        Function Prototypes
+ 522:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
+ 523:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 524:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 525:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions
+ 526:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 527:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 528:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 529:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 530:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_init
+ 531:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 532:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 533:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 534:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** cy_en_gpio_status_t Cy_GPIO_Pin_Init(GPIO_PRT_Type* base, uint32_t pinNum, const cy_stc_gpio_pin_co
+ 535:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** cy_en_gpio_status_t Cy_GPIO_Port_Init(GPIO_PRT_Type* base, const cy_stc_gpio_prt_config_t *config);
+ 536:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** void Cy_GPIO_Pin_FastInit(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t driveMode, uint32_t outVal
+ 537:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** void Cy_GPIO_Port_Deinit(GPIO_PRT_Type* base);
+ 538:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetHSIOM(GPIO_PRT_Type* base, uint32_t pinNum, en_hsiom_sel_t value);
+ 539:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE en_hsiom_sel_t Cy_GPIO_GetHSIOM(GPIO_PRT_Type* base, uint32_t pinNum);
+ 540:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE GPIO_PRT_Type* Cy_GPIO_PortToAddr(uint32_t portNum);
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 14
+
+
+ 541:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 542:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_init */
+ 543:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 544:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 545:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_gpio
+ 546:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 547:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 548:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 549:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** void Cy_GPIO_SetAmuxSplit(cy_en_amux_split_t switchCtrl, cy_en_gpio_amuxconnect_t amuxConnect, cy_e
+ 550:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** cy_en_gpio_amuxconnect_t Cy_GPIO_GetAmuxSplit(cy_en_amux_split_t switchCtrl, cy_en_gpio_amuxselect_
+ 551:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 552:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_Read(GPIO_PRT_Type* base, uint32_t pinNum);
+ 553:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Write(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 554:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_ReadOut(GPIO_PRT_Type* base, uint32_t pinNum);
+ 555:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Set(GPIO_PRT_Type* base, uint32_t pinNum);
+ 556:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Clr(GPIO_PRT_Type* base, uint32_t pinNum);
+ 557:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Inv(GPIO_PRT_Type* base, uint32_t pinNum);
+ 558:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetDrivemode(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 559:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetDrivemode(GPIO_PRT_Type* base, uint32_t pinNum);
+ 560:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVtrip(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 561:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVtrip(GPIO_PRT_Type* base, uint32_t pinNum);
+ 562:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetSlewRate(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 563:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetSlewRate(GPIO_PRT_Type* base, uint32_t pinNum);
+ 564:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetDriveSel(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 565:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetDriveSel(GPIO_PRT_Type* base, uint32_t pinNum);
+ 566:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 567:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_gpio */
+ 568:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 569:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 570:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_sio
+ 571:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 572:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 573:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 574:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVregEn(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 575:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVregEn(GPIO_PRT_Type* base, uint32_t pinNum);
+ 576:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetIbufMode(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 577:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetIbufMode(GPIO_PRT_Type* base, uint32_t pinNum);
+ 578:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVtripSel(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 579:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVtripSel(GPIO_PRT_Type* base, uint32_t pinNum);
+ 580:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVrefSel(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 581:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVrefSel(GPIO_PRT_Type* base, uint32_t pinNum);
+ 582:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVohSel(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
+ 583:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVohSel(GPIO_PRT_Type* base, uint32_t pinNum);
+ 584:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 585:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_sio */
+ 586:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 587:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 588:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_interrupt
+ 589:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 590:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 591:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 592:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptStatus(GPIO_PRT_Type* base, uint32_t pinNum);
+ 593:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_ClearInterrupt(GPIO_PRT_Type* base, uint32_t pinNum);
+ 594:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetInterruptMask(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value)
+ 595:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptMask(GPIO_PRT_Type* base, uint32_t pinNum);
+ 596:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptStatusMasked(GPIO_PRT_Type* base, uint32_t pinNum);
+ 597:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetSwInterrupt(GPIO_PRT_Type* base, uint32_t pinNum);
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 15
+
+
+ 598:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetInterruptEdge(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value)
+ 599:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptEdge(GPIO_PRT_Type* base, uint32_t pinNum);
+ 600:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetFilter(GPIO_PRT_Type* base, uint32_t value);
+ 601:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetFilter(GPIO_PRT_Type* base);
+ 602:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 603:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptCause0(void);
+ 604:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptCause1(void);
+ 605:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptCause2(void);
+ 606:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetInterruptCause3(void);
+ 607:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 608:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_interrupt */
+ 609:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 610:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 611:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 612:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_init
+ 613:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 614:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 615:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 616:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
+ 617:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_SetHSIOM
+ 618:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
+ 619:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 620:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Configures the HSIOM connection to the pin.
+ 621:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 622:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Connects the specified High-Speed Input Output Multiplexer (HSIOM) selection
+ 623:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * to the pin.
+ 624:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 625:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param base
+ 626:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Pointer to the pin's port register base address
+ 627:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 628:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param pinNum
+ 629:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register
+ 630:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 631:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param value
+ 632:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * HSIOM input selection
+ 633:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 634:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \note 
+ 635:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * This function modifies a port register in a read-modify-write operation. It is
+ 636:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * not thread safe as the resource is shared among multiple pins on a port.
+ 637:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 638:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
+ 639:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_SetHSIOM
+ 640:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 641:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+ 642:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetHSIOM(GPIO_PRT_Type* base, uint32_t pinNum, en_hsiom_sel_t value)
+ 643:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 644:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t portNum;
+ 645:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t tempReg;
+ 646:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     HSIOM_PRT_V1_Type* portAddrHSIOM;
+ 647:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 648:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_PIN_VALID(pinNum));
+ 649:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_HSIOM_VALID(value));
+ 650:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 651:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     portNum = ((uint32_t)(base) - CY_GPIO_BASE) / GPIO_PRT_SECTION_SIZE;
+ 652:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     portAddrHSIOM = (HSIOM_PRT_V1_Type*)(CY_HSIOM_BASE + (HSIOM_PRT_SECTION_SIZE * portNum));
+ 653:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 654:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     if(pinNum < CY_GPIO_PRT_HALF)
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 16
+
+
+ 655:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 656:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         tempReg = HSIOM_PRT_PORT_SEL0(portAddrHSIOM) & ~(CY_GPIO_HSIOM_MASK << (pinNum << CY_GPIO_H
+ 657:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         HSIOM_PRT_PORT_SEL0(portAddrHSIOM) = tempReg | ((value & CY_GPIO_HSIOM_MASK) << (pinNum << 
+ 658:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 659:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     else
+ 660:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 661:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         pinNum -= CY_GPIO_PRT_HALF;
+ 662:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         tempReg = HSIOM_PRT_PORT_SEL1(portAddrHSIOM) & ~(CY_GPIO_HSIOM_MASK << (pinNum << CY_GPIO_H
+ 663:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         HSIOM_PRT_PORT_SEL1(portAddrHSIOM) = tempReg | ((value & CY_GPIO_HSIOM_MASK) << (pinNum << 
+ 664:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 665:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }
+ 666:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 667:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 668:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
+ 669:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_GetHSIOM
+ 670:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
+ 671:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 672:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Returns the current HSIOM multiplexer connection to the pin.
+ 673:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 674:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param base
+ 675:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Pointer to the pin's port register base address
+ 676:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 677:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param pinNum
+ 678:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register
+ 679:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 680:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \return
+ 681:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * HSIOM input selection
+ 682:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 683:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
+ 684:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_SetHSIOM
+ 685:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 686:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+ 687:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE en_hsiom_sel_t Cy_GPIO_GetHSIOM(GPIO_PRT_Type* base, uint32_t pinNum)
+ 688:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 689:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t returnValue;
+ 690:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t portNum;
+ 691:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     HSIOM_PRT_V1_Type* portAddrHSIOM;
+ 692:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     
+ 693:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_PIN_VALID(pinNum));
+ 694:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 695:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     portNum = ((uint32_t)(base) - CY_GPIO_BASE) / GPIO_PRT_SECTION_SIZE;
+ 696:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     portAddrHSIOM = (HSIOM_PRT_V1_Type*)(CY_HSIOM_BASE + (HSIOM_PRT_SECTION_SIZE * portNum));
+ 697:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 698:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     if(pinNum < CY_GPIO_PRT_HALF)
+ 699:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 700:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         returnValue = (HSIOM_PRT_PORT_SEL0(portAddrHSIOM) >> (pinNum << CY_GPIO_HSIOM_OFFSET)) & CY
+ 701:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 702:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     else
+ 703:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 704:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         pinNum -= CY_GPIO_PRT_HALF;
+ 705:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         returnValue = (HSIOM_PRT_PORT_SEL1(portAddrHSIOM) >> (pinNum << CY_GPIO_HSIOM_OFFSET)) & CY
+ 706:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 707:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 708:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     return (en_hsiom_sel_t)returnValue;
+ 709:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }
+ 710:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 711:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 17
+
+
+ 712:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
+ 713:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_PortToAddr
+ 714:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
+ 715:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 716:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Retrieves the port address based on the given port number.
+ 717:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 718:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * This is a helper function to calculate the port base address when given a port
+ 719:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * number. It is to be used when pin access needs to be calculated at runtime.
+ 720:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 721:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param portNum
+ 722:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Port number
+ 723:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 724:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \return
+ 725:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Base address of the port register structure
+ 726:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 727:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
+ 728:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_PortToAddr
+ 729:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 730:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+ 731:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE GPIO_PRT_Type* Cy_GPIO_PortToAddr(uint32_t portNum)
+ 732:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 733:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     GPIO_PRT_Type* portBase;
+ 734:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     
+ 735:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     if(portNum < (uint32_t)IOSS_GPIO_GPIO_PORT_NR)
+ 736:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 737:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         portBase = (GPIO_PRT_Type *)(CY_GPIO_BASE + (GPIO_PRT_SECTION_SIZE * portNum));
+ 738:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 739:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     else
+ 740:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 741:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         /* Error: Return default base address */
+ 742:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         portBase = (GPIO_PRT_Type *)(CY_GPIO_BASE);
+ 743:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 744:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 745:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     return (portBase);
+ 746:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }
+ 747:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 748:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_init */
+ 749:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 750:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
+ 751:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_functions_gpio
+ 752:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
+ 753:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
+ 754:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 755:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
+ 756:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_Read
+ 757:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
+ 758:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 759:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Reads the current logic level on the input buffer of the pin.
+ 760:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 761:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param base
+ 762:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Pointer to the pin's port register base address
+ 763:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 764:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param pinNum
+ 765:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register.
+ 766:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Bit position 8 is the routed pin through the port glitch filter.
+ 767:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 768:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \return
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 18
+
+
+ 769:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Logic level present on the pin
+ 770:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 771:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
+ 772:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_Read
+ 773:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 774:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+ 775:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_Read(GPIO_PRT_Type* base, uint32_t pinNum)
+ 776:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 777:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_FILTER_PIN_VALID(pinNum));
+ 778:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     
+ 779:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     return (GPIO_PRT_IN(base) >> (pinNum)) & CY_GPIO_IN_MASK;
+ 780:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }
+ 781:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 782:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 783:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
+ 784:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_Write
+ 785:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
+ 786:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 787:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Write a logic 0 or logic 1 state to the output driver.
+ 788:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 789:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * This function should be used only for software driven pins. It does not have
+ 790:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * any effect on peripheral driven pins.
+ 791:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 792:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param base
+ 793:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Pointer to the pin's port register base address
+ 794:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 795:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param pinNum
+ 796:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register
+ 797:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 798:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param value
+ 799:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Logic level to drive out on the pin
+ 800:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 801:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
+ 802:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_Write
+ 803:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
+ 804:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
+ 805:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Write(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value)
+ 806:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
+ 807:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_PIN_VALID(pinNum));
+ 808:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_ASSERT_L2(CY_GPIO_IS_VALUE_VALID(value));
+ 809:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
+ 810:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     /* Thread-safe: Directly access the pin registers instead of base->OUT */
+ 811:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     if(0UL == value)
+ 812:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 813:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         GPIO_PRT_OUT_CLR(base) = CY_GPIO_OUT_MASK << pinNum;
+ 814:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+ 815:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     else
+ 816:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     {
+ 817:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****         GPIO_PRT_OUT_SET(base) = CY_GPIO_OUT_MASK << pinNum;
+  56              		.loc 3 817 0 discriminator 1
+  57 0004 084C     		ldr	r4, .L3
+  58 0006 0825     		movs	r5, #8
+  59 0008 A560     		str	r5, [r4, #8]
+  60              	.LVL1:
+  61              	.LBE17:
+  62              	.LBE16:
+  16:main_cm0p.c   ****     __enable_irq(); /* Enable global interrupts. */
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 19
+
+
+  17:main_cm0p.c   ****     /* Enable CM4.  CY_CORTEX_M4_APPL_ADDR must be updated if CM4 memory layout is changed. */
+  18:main_cm0p.c   ****     //Cy_SysEnableCM4(CY_CORTEX_M4_APPL_ADDR); 
+  19:main_cm0p.c   **** 
+  20:main_cm0p.c   ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  21:main_cm0p.c   **** 
+  22:main_cm0p.c   ****     for(;;)
+  23:main_cm0p.c   ****     {
+  24:main_cm0p.c   ****         Cy_GPIO_Write(RED_PORT,RED_NUM,1);
+  25:main_cm0p.c   ****         CyDelay(500);
+  63              		.loc 1 25 0 discriminator 1
+  64 000a FA26     		movs	r6, #250
+  65 000c 7600     		lsls	r6, r6, #1
+  66 000e 3000     		movs	r0, r6
+  67 0010 FFF7FEFF 		bl	Cy_SysLib_Delay
+  68              	.LVL2:
+  69              	.LBB18:
+  70              	.LBB19:
+ 813:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+  71              		.loc 3 813 0 discriminator 1
+  72 0014 6560     		str	r5, [r4, #4]
+  73              	.LVL3:
+  74              	.LBE19:
+  75              	.LBE18:
+  76              	.LBB20:
+  77              	.LBB21:
+  78              		.loc 3 817 0 discriminator 1
+  79 0016 054C     		ldr	r4, .L3+4
+  80 0018 063D     		subs	r5, r5, #6
+  81 001a A560     		str	r5, [r4, #8]
+  82              	.LVL4:
+  83              	.LBE21:
+  84              	.LBE20:
+  26:main_cm0p.c   ****         Cy_GPIO_Write(RED_PORT,RED_NUM,0);
+  27:main_cm0p.c   ****         Cy_GPIO_Write(GREEN_PORT,GREEN_NUM,1);
+  28:main_cm0p.c   ****         CyDelay(500);
+  85              		.loc 1 28 0 discriminator 1
+  86 001c 3000     		movs	r0, r6
+  87 001e FFF7FEFF 		bl	Cy_SysLib_Delay
+  88              	.LVL5:
+  89              	.LBB22:
+  90              	.LBB23:
+ 813:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     }
+  91              		.loc 3 813 0 discriminator 1
+  92 0022 6560     		str	r5, [r4, #4]
+  93 0024 EEE7     		b	.L2
+  94              	.L4:
+  95 0026 C046     		.align	2
+  96              	.L3:
+  97 0028 00033240 		.word	1077019392
+  98 002c 80033240 		.word	1077019520
+  99              	.LBE23:
+ 100              	.LBE22:
+ 101              		.cfi_endproc
+ 102              	.LFE240:
+ 103              		.size	main, .-main
+ 104              		.text
+ 105              	.Letext0:
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 20
+
+
+ 106              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 107              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 108              		.file 6 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/ip/cyip_gpio.h"
+ 109              		.file 7 "Generated_Source\\PSoC6\\pdl\\devices/psoc6/include/psoc6_01_config.h"
+ 110              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+ 111              		.file 9 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 112              		.section	.debug_info,"",%progbits
+ 113              	.Ldebug_info0:
+ 114 0000 38080000 		.4byte	0x838
+ 115 0004 0400     		.2byte	0x4
+ 116 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 117 000a 04       		.byte	0x4
+ 118 000b 01       		.uleb128 0x1
+ 119 000c 34060000 		.4byte	.LASF141
+ 120 0010 0C       		.byte	0xc
+ 121 0011 70000000 		.4byte	.LASF142
+ 122 0015 98050000 		.4byte	.LASF143
+ 123 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 124 001d 00000000 		.4byte	0
+ 125 0021 00000000 		.4byte	.Ldebug_line0
+ 126 0025 02       		.uleb128 0x2
+ 127 0026 02       		.byte	0x2
+ 128 0027 05       		.byte	0x5
+ 129 0028 C6050000 		.4byte	.LASF0
+ 130 002c 02       		.uleb128 0x2
+ 131 002d 01       		.byte	0x1
+ 132 002e 08       		.byte	0x8
+ 133 002f 61050000 		.4byte	.LASF1
+ 134 0033 02       		.uleb128 0x2
+ 135 0034 01       		.byte	0x1
+ 136 0035 06       		.byte	0x6
+ 137 0036 84010000 		.4byte	.LASF2
+ 138 003a 03       		.uleb128 0x3
+ 139 003b 8A000000 		.4byte	.LASF3
+ 140 003f 04       		.byte	0x4
+ 141 0040 1D       		.byte	0x1d
+ 142 0041 2C000000 		.4byte	0x2c
+ 143 0045 03       		.uleb128 0x3
+ 144 0046 85020000 		.4byte	.LASF4
+ 145 004a 04       		.byte	0x4
+ 146 004b 29       		.byte	0x29
+ 147 004c 25000000 		.4byte	0x25
+ 148 0050 03       		.uleb128 0x3
+ 149 0051 23070000 		.4byte	.LASF5
+ 150 0055 04       		.byte	0x4
+ 151 0056 2B       		.byte	0x2b
+ 152 0057 5B000000 		.4byte	0x5b
+ 153 005b 02       		.uleb128 0x2
+ 154 005c 02       		.byte	0x2
+ 155 005d 07       		.byte	0x7
+ 156 005e 7F070000 		.4byte	.LASF6
+ 157 0062 02       		.uleb128 0x2
+ 158 0063 04       		.byte	0x4
+ 159 0064 05       		.byte	0x5
+ 160 0065 D1010000 		.4byte	.LASF7
+ 161 0069 03       		.uleb128 0x3
+ 162 006a 6A020000 		.4byte	.LASF8
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 21
+
+
+ 163 006e 04       		.byte	0x4
+ 164 006f 41       		.byte	0x41
+ 165 0070 74000000 		.4byte	0x74
+ 166 0074 02       		.uleb128 0x2
+ 167 0075 04       		.byte	0x4
+ 168 0076 07       		.byte	0x7
+ 169 0077 F5020000 		.4byte	.LASF9
+ 170 007b 02       		.uleb128 0x2
+ 171 007c 08       		.byte	0x8
+ 172 007d 05       		.byte	0x5
+ 173 007e 76010000 		.4byte	.LASF10
+ 174 0082 02       		.uleb128 0x2
+ 175 0083 08       		.byte	0x8
+ 176 0084 07       		.byte	0x7
+ 177 0085 F8000000 		.4byte	.LASF11
+ 178 0089 04       		.uleb128 0x4
+ 179 008a 04       		.byte	0x4
+ 180 008b 05       		.byte	0x5
+ 181 008c 696E7400 		.ascii	"int\000"
+ 182 0090 02       		.uleb128 0x2
+ 183 0091 04       		.byte	0x4
+ 184 0092 07       		.byte	0x7
+ 185 0093 BE020000 		.4byte	.LASF12
+ 186 0097 03       		.uleb128 0x3
+ 187 0098 EC070000 		.4byte	.LASF13
+ 188 009c 05       		.byte	0x5
+ 189 009d 18       		.byte	0x18
+ 190 009e 3A000000 		.4byte	0x3a
+ 191 00a2 03       		.uleb128 0x3
+ 192 00a3 6E010000 		.4byte	.LASF14
+ 193 00a7 05       		.byte	0x5
+ 194 00a8 20       		.byte	0x20
+ 195 00a9 45000000 		.4byte	0x45
+ 196 00ad 03       		.uleb128 0x3
+ 197 00ae D3020000 		.4byte	.LASF15
+ 198 00b2 05       		.byte	0x5
+ 199 00b3 24       		.byte	0x24
+ 200 00b4 50000000 		.4byte	0x50
+ 201 00b8 03       		.uleb128 0x3
+ 202 00b9 1B060000 		.4byte	.LASF16
+ 203 00bd 05       		.byte	0x5
+ 204 00be 30       		.byte	0x30
+ 205 00bf 69000000 		.4byte	0x69
+ 206 00c3 02       		.uleb128 0x2
+ 207 00c4 04       		.byte	0x4
+ 208 00c5 07       		.byte	0x7
+ 209 00c6 36040000 		.4byte	.LASF17
+ 210 00ca 05       		.uleb128 0x5
+ 211 00cb B8000000 		.4byte	0xb8
+ 212 00cf 06       		.uleb128 0x6
+ 213 00d0 CA000000 		.4byte	0xca
+ 214 00d4 07       		.uleb128 0x7
+ 215 00d5 CF000000 		.4byte	0xcf
+ 216 00d9 E4000000 		.4byte	0xe4
+ 217 00dd 08       		.uleb128 0x8
+ 218 00de C3000000 		.4byte	0xc3
+ 219 00e2 0F       		.byte	0xf
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 22
+
+
+ 220 00e3 00       		.byte	0
+ 221 00e4 09       		.uleb128 0x9
+ 222 00e5 80       		.byte	0x80
+ 223 00e6 06       		.byte	0x6
+ 224 00e7 22       		.byte	0x22
+ 225 00e8 B8010000 		.4byte	0x1b8
+ 226 00ec 0A       		.uleb128 0xa
+ 227 00ed 4F555400 		.ascii	"OUT\000"
+ 228 00f1 06       		.byte	0x6
+ 229 00f2 23       		.byte	0x23
+ 230 00f3 CA000000 		.4byte	0xca
+ 231 00f7 00       		.byte	0
+ 232 00f8 0B       		.uleb128 0xb
+ 233 00f9 E8040000 		.4byte	.LASF18
+ 234 00fd 06       		.byte	0x6
+ 235 00fe 24       		.byte	0x24
+ 236 00ff CA000000 		.4byte	0xca
+ 237 0103 04       		.byte	0x4
+ 238 0104 0B       		.uleb128 0xb
+ 239 0105 2E070000 		.4byte	.LASF19
+ 240 0109 06       		.byte	0x6
+ 241 010a 25       		.byte	0x25
+ 242 010b CA000000 		.4byte	0xca
+ 243 010f 08       		.byte	0x8
+ 244 0110 0B       		.uleb128 0xb
+ 245 0111 CB020000 		.4byte	.LASF20
+ 246 0115 06       		.byte	0x6
+ 247 0116 26       		.byte	0x26
+ 248 0117 CA000000 		.4byte	0xca
+ 249 011b 0C       		.byte	0xc
+ 250 011c 0A       		.uleb128 0xa
+ 251 011d 494E00   		.ascii	"IN\000"
+ 252 0120 06       		.byte	0x6
+ 253 0121 27       		.byte	0x27
+ 254 0122 CF000000 		.4byte	0xcf
+ 255 0126 10       		.byte	0x10
+ 256 0127 0B       		.uleb128 0xb
+ 257 0128 66070000 		.4byte	.LASF21
+ 258 012c 06       		.byte	0x6
+ 259 012d 28       		.byte	0x28
+ 260 012e CA000000 		.4byte	0xca
+ 261 0132 14       		.byte	0x14
+ 262 0133 0B       		.uleb128 0xb
+ 263 0134 12030000 		.4byte	.LASF22
+ 264 0138 06       		.byte	0x6
+ 265 0139 29       		.byte	0x29
+ 266 013a CA000000 		.4byte	0xca
+ 267 013e 18       		.byte	0x18
+ 268 013f 0B       		.uleb128 0xb
+ 269 0140 55030000 		.4byte	.LASF23
+ 270 0144 06       		.byte	0x6
+ 271 0145 2A       		.byte	0x2a
+ 272 0146 CF000000 		.4byte	0xcf
+ 273 014a 1C       		.byte	0x1c
+ 274 014b 0B       		.uleb128 0xb
+ 275 014c 04040000 		.4byte	.LASF24
+ 276 0150 06       		.byte	0x6
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 23
+
+
+ 277 0151 2B       		.byte	0x2b
+ 278 0152 CA000000 		.4byte	0xca
+ 279 0156 20       		.byte	0x20
+ 280 0157 0B       		.uleb128 0xb
+ 281 0158 FB030000 		.4byte	.LASF25
+ 282 015c 06       		.byte	0x6
+ 283 015d 2C       		.byte	0x2c
+ 284 015e CA000000 		.4byte	0xca
+ 285 0162 24       		.byte	0x24
+ 286 0163 0A       		.uleb128 0xa
+ 287 0164 43464700 		.ascii	"CFG\000"
+ 288 0168 06       		.byte	0x6
+ 289 0169 2D       		.byte	0x2d
+ 290 016a CA000000 		.4byte	0xca
+ 291 016e 28       		.byte	0x28
+ 292 016f 0B       		.uleb128 0xb
+ 293 0170 1F010000 		.4byte	.LASF26
+ 294 0174 06       		.byte	0x6
+ 295 0175 2E       		.byte	0x2e
+ 296 0176 CA000000 		.4byte	0xca
+ 297 017a 2C       		.byte	0x2c
+ 298 017b 0B       		.uleb128 0xb
+ 299 017c 1E080000 		.4byte	.LASF27
+ 300 0180 06       		.byte	0x6
+ 301 0181 2F       		.byte	0x2f
+ 302 0182 CA000000 		.4byte	0xca
+ 303 0186 30       		.byte	0x30
+ 304 0187 0B       		.uleb128 0xb
+ 305 0188 15050000 		.4byte	.LASF28
+ 306 018c 06       		.byte	0x6
+ 307 018d 30       		.byte	0x30
+ 308 018e CA000000 		.4byte	0xca
+ 309 0192 34       		.byte	0x34
+ 310 0193 0B       		.uleb128 0xb
+ 311 0194 D0050000 		.4byte	.LASF29
+ 312 0198 06       		.byte	0x6
+ 313 0199 31       		.byte	0x31
+ 314 019a CF000000 		.4byte	0xcf
+ 315 019e 38       		.byte	0x38
+ 316 019f 0B       		.uleb128 0xb
+ 317 01a0 07050000 		.4byte	.LASF30
+ 318 01a4 06       		.byte	0x6
+ 319 01a5 32       		.byte	0x32
+ 320 01a6 CA000000 		.4byte	0xca
+ 321 01aa 3C       		.byte	0x3c
+ 322 01ab 0B       		.uleb128 0xb
+ 323 01ac 1D050000 		.4byte	.LASF31
+ 324 01b0 06       		.byte	0x6
+ 325 01b1 33       		.byte	0x33
+ 326 01b2 BD010000 		.4byte	0x1bd
+ 327 01b6 40       		.byte	0x40
+ 328 01b7 00       		.byte	0
+ 329 01b8 05       		.uleb128 0x5
+ 330 01b9 D4000000 		.4byte	0xd4
+ 331 01bd 06       		.uleb128 0x6
+ 332 01be B8010000 		.4byte	0x1b8
+ 333 01c2 03       		.uleb128 0x3
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 24
+
+
+ 334 01c3 94000000 		.4byte	.LASF32
+ 335 01c7 06       		.byte	0x6
+ 336 01c8 34       		.byte	0x34
+ 337 01c9 E4000000 		.4byte	0xe4
+ 338 01cd 0C       		.uleb128 0xc
+ 339 01ce 2440     		.2byte	0x4024
+ 340 01d0 06       		.byte	0x6
+ 341 01d1 39       		.byte	0x39
+ 342 01d2 58020000 		.4byte	0x258
+ 343 01d6 0A       		.uleb128 0xa
+ 344 01d7 50525400 		.ascii	"PRT\000"
+ 345 01db 06       		.byte	0x6
+ 346 01dc 3A       		.byte	0x3a
+ 347 01dd 58020000 		.4byte	0x258
+ 348 01e1 00       		.byte	0
+ 349 01e2 0D       		.uleb128 0xd
+ 350 01e3 D7060000 		.4byte	.LASF33
+ 351 01e7 06       		.byte	0x6
+ 352 01e8 3B       		.byte	0x3b
+ 353 01e9 CF000000 		.4byte	0xcf
+ 354 01ed 0040     		.2byte	0x4000
+ 355 01ef 0D       		.uleb128 0xd
+ 356 01f0 E3060000 		.4byte	.LASF34
+ 357 01f4 06       		.byte	0x6
+ 358 01f5 3C       		.byte	0x3c
+ 359 01f6 CF000000 		.4byte	0xcf
+ 360 01fa 0440     		.2byte	0x4004
+ 361 01fc 0D       		.uleb128 0xd
+ 362 01fd EF060000 		.4byte	.LASF35
+ 363 0201 06       		.byte	0x6
+ 364 0202 3D       		.byte	0x3d
+ 365 0203 CF000000 		.4byte	0xcf
+ 366 0207 0840     		.2byte	0x4008
+ 367 0209 0D       		.uleb128 0xd
+ 368 020a FB060000 		.4byte	.LASF36
+ 369 020e 06       		.byte	0x6
+ 370 020f 3E       		.byte	0x3e
+ 371 0210 CF000000 		.4byte	0xcf
+ 372 0214 0C40     		.2byte	0x400c
+ 373 0216 0D       		.uleb128 0xd
+ 374 0217 2B040000 		.4byte	.LASF37
+ 375 021b 06       		.byte	0x6
+ 376 021c 3F       		.byte	0x3f
+ 377 021d CF000000 		.4byte	0xcf
+ 378 0221 1040     		.2byte	0x4010
+ 379 0223 0D       		.uleb128 0xd
+ 380 0224 ED050000 		.4byte	.LASF38
+ 381 0228 06       		.byte	0x6
+ 382 0229 40       		.byte	0x40
+ 383 022a CA000000 		.4byte	0xca
+ 384 022e 1440     		.2byte	0x4014
+ 385 0230 0D       		.uleb128 0xd
+ 386 0231 EA000000 		.4byte	.LASF39
+ 387 0235 06       		.byte	0x6
+ 388 0236 41       		.byte	0x41
+ 389 0237 CA000000 		.4byte	0xca
+ 390 023b 1840     		.2byte	0x4018
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 25
+
+
+ 391 023d 0D       		.uleb128 0xd
+ 392 023e 56070000 		.4byte	.LASF40
+ 393 0242 06       		.byte	0x6
+ 394 0243 42       		.byte	0x42
+ 395 0244 CF000000 		.4byte	0xcf
+ 396 0248 1C40     		.2byte	0x401c
+ 397 024a 0D       		.uleb128 0xd
+ 398 024b 25030000 		.4byte	.LASF41
+ 399 024f 06       		.byte	0x6
+ 400 0250 43       		.byte	0x43
+ 401 0251 CA000000 		.4byte	0xca
+ 402 0255 2040     		.2byte	0x4020
+ 403 0257 00       		.byte	0
+ 404 0258 07       		.uleb128 0x7
+ 405 0259 C2010000 		.4byte	0x1c2
+ 406 025d 68020000 		.4byte	0x268
+ 407 0261 08       		.uleb128 0x8
+ 408 0262 C3000000 		.4byte	0xc3
+ 409 0266 7F       		.byte	0x7f
+ 410 0267 00       		.byte	0
+ 411 0268 03       		.uleb128 0x3
+ 412 0269 72040000 		.4byte	.LASF42
+ 413 026d 06       		.byte	0x6
+ 414 026e 44       		.byte	0x44
+ 415 026f CD010000 		.4byte	0x1cd
+ 416 0273 0E       		.uleb128 0xe
+ 417 0274 15070000 		.4byte	.LASF43
+ 418 0278 07       		.byte	0x7
+ 419 0279 3106     		.2byte	0x631
+ 420 027b C2010000 		.4byte	0x1c2
+ 421 027f 0E       		.uleb128 0xe
+ 422 0280 26080000 		.4byte	.LASF44
+ 423 0284 07       		.byte	0x7
+ 424 0285 3206     		.2byte	0x632
+ 425 0287 68020000 		.4byte	0x268
+ 426 028b 02       		.uleb128 0x2
+ 427 028c 08       		.byte	0x8
+ 428 028d 04       		.byte	0x4
+ 429 028e C6060000 		.4byte	.LASF45
+ 430 0292 09       		.uleb128 0x9
+ 431 0293 B8       		.byte	0xb8
+ 432 0294 08       		.byte	0x8
+ 433 0295 34       		.byte	0x34
+ 434 0296 A3060000 		.4byte	0x6a3
+ 435 029a 0B       		.uleb128 0xb
+ 436 029b D1000000 		.4byte	.LASF46
+ 437 029f 08       		.byte	0x8
+ 438 02a0 37       		.byte	0x37
+ 439 02a1 B8000000 		.4byte	0xb8
+ 440 02a5 00       		.byte	0
+ 441 02a6 0B       		.uleb128 0xb
+ 442 02a7 5F020000 		.4byte	.LASF47
+ 443 02ab 08       		.byte	0x8
+ 444 02ac 38       		.byte	0x38
+ 445 02ad B8000000 		.4byte	0xb8
+ 446 02b1 04       		.byte	0x4
+ 447 02b2 0B       		.uleb128 0xb
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 26
+
+
+ 448 02b3 E8010000 		.4byte	.LASF48
+ 449 02b7 08       		.byte	0x8
+ 450 02b8 39       		.byte	0x39
+ 451 02b9 B8000000 		.4byte	0xb8
+ 452 02bd 08       		.byte	0x8
+ 453 02be 0B       		.uleb128 0xb
+ 454 02bf 53050000 		.4byte	.LASF49
+ 455 02c3 08       		.byte	0x8
+ 456 02c4 3A       		.byte	0x3a
+ 457 02c5 B8000000 		.4byte	0xb8
+ 458 02c9 0C       		.byte	0xc
+ 459 02ca 0B       		.uleb128 0xb
+ 460 02cb A5010000 		.4byte	.LASF50
+ 461 02cf 08       		.byte	0x8
+ 462 02d0 3B       		.byte	0x3b
+ 463 02d1 B8000000 		.4byte	0xb8
+ 464 02d5 10       		.byte	0x10
+ 465 02d6 0B       		.uleb128 0xb
+ 466 02d7 C7010000 		.4byte	.LASF51
+ 467 02db 08       		.byte	0x8
+ 468 02dc 3C       		.byte	0x3c
+ 469 02dd B8000000 		.4byte	0xb8
+ 470 02e1 14       		.byte	0x14
+ 471 02e2 0B       		.uleb128 0xb
+ 472 02e3 1C030000 		.4byte	.LASF52
+ 473 02e7 08       		.byte	0x8
+ 474 02e8 3D       		.byte	0x3d
+ 475 02e9 B8000000 		.4byte	0xb8
+ 476 02ed 18       		.byte	0x18
+ 477 02ee 0B       		.uleb128 0xb
+ 478 02ef 67000000 		.4byte	.LASF53
+ 479 02f3 08       		.byte	0x8
+ 480 02f4 3E       		.byte	0x3e
+ 481 02f5 B8000000 		.4byte	0xb8
+ 482 02f9 1C       		.byte	0x1c
+ 483 02fa 0B       		.uleb128 0xb
+ 484 02fb 5F080000 		.4byte	.LASF54
+ 485 02ff 08       		.byte	0x8
+ 486 0300 3F       		.byte	0x3f
+ 487 0301 B8000000 		.4byte	0xb8
+ 488 0305 20       		.byte	0x20
+ 489 0306 0B       		.uleb128 0xb
+ 490 0307 C3040000 		.4byte	.LASF55
+ 491 030b 08       		.byte	0x8
+ 492 030c 40       		.byte	0x40
+ 493 030d B8000000 		.4byte	0xb8
+ 494 0311 24       		.byte	0x24
+ 495 0312 0B       		.uleb128 0xb
+ 496 0313 0D040000 		.4byte	.LASF56
+ 497 0317 08       		.byte	0x8
+ 498 0318 43       		.byte	0x43
+ 499 0319 97000000 		.4byte	0x97
+ 500 031d 28       		.byte	0x28
+ 501 031e 0B       		.uleb128 0xb
+ 502 031f 4D000000 		.4byte	.LASF57
+ 503 0323 08       		.byte	0x8
+ 504 0324 44       		.byte	0x44
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 27
+
+
+ 505 0325 97000000 		.4byte	0x97
+ 506 0329 29       		.byte	0x29
+ 507 032a 0B       		.uleb128 0xb
+ 508 032b 55080000 		.4byte	.LASF58
+ 509 032f 08       		.byte	0x8
+ 510 0330 45       		.byte	0x45
+ 511 0331 97000000 		.4byte	0x97
+ 512 0335 2A       		.byte	0x2a
+ 513 0336 0B       		.uleb128 0xb
+ 514 0337 B5040000 		.4byte	.LASF59
+ 515 033b 08       		.byte	0x8
+ 516 033c 46       		.byte	0x46
+ 517 033d 97000000 		.4byte	0x97
+ 518 0341 2B       		.byte	0x2b
+ 519 0342 0B       		.uleb128 0xb
+ 520 0343 7C030000 		.4byte	.LASF60
+ 521 0347 08       		.byte	0x8
+ 522 0348 47       		.byte	0x47
+ 523 0349 97000000 		.4byte	0x97
+ 524 034d 2C       		.byte	0x2c
+ 525 034e 0B       		.uleb128 0xb
+ 526 034f 49070000 		.4byte	.LASF61
+ 527 0353 08       		.byte	0x8
+ 528 0354 48       		.byte	0x48
+ 529 0355 97000000 		.4byte	0x97
+ 530 0359 2D       		.byte	0x2d
+ 531 035a 0B       		.uleb128 0xb
+ 532 035b AE010000 		.4byte	.LASF62
+ 533 035f 08       		.byte	0x8
+ 534 0360 49       		.byte	0x49
+ 535 0361 97000000 		.4byte	0x97
+ 536 0365 2E       		.byte	0x2e
+ 537 0366 0B       		.uleb128 0xb
+ 538 0367 1F040000 		.4byte	.LASF63
+ 539 036b 08       		.byte	0x8
+ 540 036c 4A       		.byte	0x4a
+ 541 036d 97000000 		.4byte	0x97
+ 542 0371 2F       		.byte	0x2f
+ 543 0372 0B       		.uleb128 0xb
+ 544 0373 8D040000 		.4byte	.LASF64
+ 545 0377 08       		.byte	0x8
+ 546 0378 4B       		.byte	0x4b
+ 547 0379 97000000 		.4byte	0x97
+ 548 037d 30       		.byte	0x30
+ 549 037e 0B       		.uleb128 0xb
+ 550 037f 07030000 		.4byte	.LASF65
+ 551 0383 08       		.byte	0x8
+ 552 0384 4E       		.byte	0x4e
+ 553 0385 97000000 		.4byte	0x97
+ 554 0389 31       		.byte	0x31
+ 555 038a 0B       		.uleb128 0xb
+ 556 038b 7C000000 		.4byte	.LASF66
+ 557 038f 08       		.byte	0x8
+ 558 0390 4F       		.byte	0x4f
+ 559 0391 97000000 		.4byte	0x97
+ 560 0395 32       		.byte	0x32
+ 561 0396 0B       		.uleb128 0xb
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 28
+
+
+ 562 0397 3C010000 		.4byte	.LASF67
+ 563 039b 08       		.byte	0x8
+ 564 039c 50       		.byte	0x50
+ 565 039d 97000000 		.4byte	0x97
+ 566 03a1 33       		.byte	0x33
+ 567 03a2 0B       		.uleb128 0xb
+ 568 03a3 4A040000 		.4byte	.LASF68
+ 569 03a7 08       		.byte	0x8
+ 570 03a8 51       		.byte	0x51
+ 571 03a9 97000000 		.4byte	0x97
+ 572 03ad 34       		.byte	0x34
+ 573 03ae 0B       		.uleb128 0xb
+ 574 03af A9070000 		.4byte	.LASF69
+ 575 03b3 08       		.byte	0x8
+ 576 03b4 52       		.byte	0x52
+ 577 03b5 A2000000 		.4byte	0xa2
+ 578 03b9 36       		.byte	0x36
+ 579 03ba 0B       		.uleb128 0xb
+ 580 03bb 02020000 		.4byte	.LASF70
+ 581 03bf 08       		.byte	0x8
+ 582 03c0 53       		.byte	0x53
+ 583 03c1 A2000000 		.4byte	0xa2
+ 584 03c5 38       		.byte	0x38
+ 585 03c6 0B       		.uleb128 0xb
+ 586 03c7 C7070000 		.4byte	.LASF71
+ 587 03cb 08       		.byte	0x8
+ 588 03cc 54       		.byte	0x54
+ 589 03cd A2000000 		.4byte	0xa2
+ 590 03d1 3A       		.byte	0x3a
+ 591 03d2 0B       		.uleb128 0xb
+ 592 03d3 46080000 		.4byte	.LASF72
+ 593 03d7 08       		.byte	0x8
+ 594 03d8 55       		.byte	0x55
+ 595 03d9 97000000 		.4byte	0x97
+ 596 03dd 3C       		.byte	0x3c
+ 597 03de 0B       		.uleb128 0xb
+ 598 03df 29020000 		.4byte	.LASF73
+ 599 03e3 08       		.byte	0x8
+ 600 03e4 56       		.byte	0x56
+ 601 03e5 97000000 		.4byte	0x97
+ 602 03e9 3D       		.byte	0x3d
+ 603 03ea 0B       		.uleb128 0xb
+ 604 03eb FD050000 		.4byte	.LASF74
+ 605 03ef 08       		.byte	0x8
+ 606 03f0 57       		.byte	0x57
+ 607 03f1 97000000 		.4byte	0x97
+ 608 03f5 3E       		.byte	0x3e
+ 609 03f6 0B       		.uleb128 0xb
+ 610 03f7 5B000000 		.4byte	.LASF75
+ 611 03fb 08       		.byte	0x8
+ 612 03fc 58       		.byte	0x58
+ 613 03fd 97000000 		.4byte	0x97
+ 614 0401 3F       		.byte	0x3f
+ 615 0402 0B       		.uleb128 0xb
+ 616 0403 CE040000 		.4byte	.LASF76
+ 617 0407 08       		.byte	0x8
+ 618 0408 59       		.byte	0x59
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 29
+
+
+ 619 0409 97000000 		.4byte	0x97
+ 620 040d 40       		.byte	0x40
+ 621 040e 0B       		.uleb128 0xb
+ 622 040f 75020000 		.4byte	.LASF77
+ 623 0413 08       		.byte	0x8
+ 624 0414 5A       		.byte	0x5a
+ 625 0415 97000000 		.4byte	0x97
+ 626 0419 41       		.byte	0x41
+ 627 041a 0B       		.uleb128 0xb
+ 628 041b AD030000 		.4byte	.LASF78
+ 629 041f 08       		.byte	0x8
+ 630 0420 5B       		.byte	0x5b
+ 631 0421 97000000 		.4byte	0x97
+ 632 0425 42       		.byte	0x42
+ 633 0426 0B       		.uleb128 0xb
+ 634 0427 AA040000 		.4byte	.LASF79
+ 635 042b 08       		.byte	0x8
+ 636 042c 5C       		.byte	0x5c
+ 637 042d 97000000 		.4byte	0x97
+ 638 0431 43       		.byte	0x43
+ 639 0432 0B       		.uleb128 0xb
+ 640 0433 F1010000 		.4byte	.LASF80
+ 641 0437 08       		.byte	0x8
+ 642 0438 5D       		.byte	0x5d
+ 643 0439 97000000 		.4byte	0x97
+ 644 043d 44       		.byte	0x44
+ 645 043e 0B       		.uleb128 0xb
+ 646 043f 00000000 		.4byte	.LASF81
+ 647 0443 08       		.byte	0x8
+ 648 0444 5E       		.byte	0x5e
+ 649 0445 B8000000 		.4byte	0xb8
+ 650 0449 48       		.byte	0x48
+ 651 044a 0B       		.uleb128 0xb
+ 652 044b DA010000 		.4byte	.LASF82
+ 653 044f 08       		.byte	0x8
+ 654 0450 5F       		.byte	0x5f
+ 655 0451 B8000000 		.4byte	0xb8
+ 656 0455 4C       		.byte	0x4c
+ 657 0456 0B       		.uleb128 0xb
+ 658 0457 8F080000 		.4byte	.LASF83
+ 659 045b 08       		.byte	0x8
+ 660 045c 60       		.byte	0x60
+ 661 045d 97000000 		.4byte	0x97
+ 662 0461 50       		.byte	0x50
+ 663 0462 0B       		.uleb128 0xb
+ 664 0463 48010000 		.4byte	.LASF84
+ 665 0467 08       		.byte	0x8
+ 666 0468 61       		.byte	0x61
+ 667 0469 97000000 		.4byte	0x97
+ 668 046d 51       		.byte	0x51
+ 669 046e 0B       		.uleb128 0xb
+ 670 046f DC070000 		.4byte	.LASF85
+ 671 0473 08       		.byte	0x8
+ 672 0474 62       		.byte	0x62
+ 673 0475 97000000 		.4byte	0x97
+ 674 0479 52       		.byte	0x52
+ 675 047a 0B       		.uleb128 0xb
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 30
+
+
+ 676 047b 7D080000 		.4byte	.LASF86
+ 677 047f 08       		.byte	0x8
+ 678 0480 63       		.byte	0x63
+ 679 0481 97000000 		.4byte	0x97
+ 680 0485 53       		.byte	0x53
+ 681 0486 0B       		.uleb128 0xb
+ 682 0487 0B060000 		.4byte	.LASF87
+ 683 048b 08       		.byte	0x8
+ 684 048c 64       		.byte	0x64
+ 685 048d 97000000 		.4byte	0x97
+ 686 0491 54       		.byte	0x54
+ 687 0492 0B       		.uleb128 0xb
+ 688 0493 5A010000 		.4byte	.LASF88
+ 689 0497 08       		.byte	0x8
+ 690 0498 65       		.byte	0x65
+ 691 0499 97000000 		.4byte	0x97
+ 692 049d 55       		.byte	0x55
+ 693 049e 0B       		.uleb128 0xb
+ 694 049f 6B070000 		.4byte	.LASF89
+ 695 04a3 08       		.byte	0x8
+ 696 04a4 66       		.byte	0x66
+ 697 04a5 97000000 		.4byte	0x97
+ 698 04a9 56       		.byte	0x56
+ 699 04aa 0B       		.uleb128 0xb
+ 700 04ab 32030000 		.4byte	.LASF90
+ 701 04af 08       		.byte	0x8
+ 702 04b0 67       		.byte	0x67
+ 703 04b1 97000000 		.4byte	0x97
+ 704 04b5 57       		.byte	0x57
+ 705 04b6 0B       		.uleb128 0xb
+ 706 04b7 12000000 		.4byte	.LASF91
+ 707 04bb 08       		.byte	0x8
+ 708 04bc 68       		.byte	0x68
+ 709 04bd 97000000 		.4byte	0x97
+ 710 04c1 58       		.byte	0x58
+ 711 04c2 0B       		.uleb128 0xb
+ 712 04c3 84050000 		.4byte	.LASF92
+ 713 04c7 08       		.byte	0x8
+ 714 04c8 69       		.byte	0x69
+ 715 04c9 97000000 		.4byte	0x97
+ 716 04cd 59       		.byte	0x59
+ 717 04ce 0B       		.uleb128 0xb
+ 718 04cf 3F040000 		.4byte	.LASF93
+ 719 04d3 08       		.byte	0x8
+ 720 04d4 6E       		.byte	0x6e
+ 721 04d5 AD000000 		.4byte	0xad
+ 722 04d9 5A       		.byte	0x5a
+ 723 04da 0B       		.uleb128 0xb
+ 724 04db 92070000 		.4byte	.LASF94
+ 725 04df 08       		.byte	0x8
+ 726 04e0 6F       		.byte	0x6f
+ 727 04e1 AD000000 		.4byte	0xad
+ 728 04e5 5C       		.byte	0x5c
+ 729 04e6 0B       		.uleb128 0xb
+ 730 04e7 DB000000 		.4byte	.LASF95
+ 731 04eb 08       		.byte	0x8
+ 732 04ec 70       		.byte	0x70
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 31
+
+
+ 733 04ed 97000000 		.4byte	0x97
+ 734 04f1 5E       		.byte	0x5e
+ 735 04f2 0B       		.uleb128 0xb
+ 736 04f3 3D050000 		.4byte	.LASF96
+ 737 04f7 08       		.byte	0x8
+ 738 04f8 71       		.byte	0x71
+ 739 04f9 97000000 		.4byte	0x97
+ 740 04fd 5F       		.byte	0x5f
+ 741 04fe 0B       		.uleb128 0xb
+ 742 04ff 99040000 		.4byte	.LASF97
+ 743 0503 08       		.byte	0x8
+ 744 0504 72       		.byte	0x72
+ 745 0505 97000000 		.4byte	0x97
+ 746 0509 60       		.byte	0x60
+ 747 050a 0B       		.uleb128 0xb
+ 748 050b F6040000 		.4byte	.LASF98
+ 749 050f 08       		.byte	0x8
+ 750 0510 73       		.byte	0x73
+ 751 0511 B8000000 		.4byte	0xb8
+ 752 0515 64       		.byte	0x64
+ 753 0516 0B       		.uleb128 0xb
+ 754 0517 0F010000 		.4byte	.LASF99
+ 755 051b 08       		.byte	0x8
+ 756 051c 76       		.byte	0x76
+ 757 051d AD000000 		.4byte	0xad
+ 758 0521 68       		.byte	0x68
+ 759 0522 0B       		.uleb128 0xb
+ 760 0523 E3020000 		.4byte	.LASF100
+ 761 0527 08       		.byte	0x8
+ 762 0528 77       		.byte	0x77
+ 763 0529 AD000000 		.4byte	0xad
+ 764 052d 6A       		.byte	0x6a
+ 765 052e 0B       		.uleb128 0xb
+ 766 052f 46030000 		.4byte	.LASF101
+ 767 0533 08       		.byte	0x8
+ 768 0534 78       		.byte	0x78
+ 769 0535 AD000000 		.4byte	0xad
+ 770 0539 6C       		.byte	0x6c
+ 771 053a 0B       		.uleb128 0xb
+ 772 053b 6F030000 		.4byte	.LASF102
+ 773 053f 08       		.byte	0x8
+ 774 0540 79       		.byte	0x79
+ 775 0541 AD000000 		.4byte	0xad
+ 776 0545 6E       		.byte	0x6e
+ 777 0546 0B       		.uleb128 0xb
+ 778 0547 D9050000 		.4byte	.LASF103
+ 779 054b 08       		.byte	0x8
+ 780 054c 7B       		.byte	0x7b
+ 781 054d 97000000 		.4byte	0x97
+ 782 0551 70       		.byte	0x70
+ 783 0552 0B       		.uleb128 0xb
+ 784 0553 90010000 		.4byte	.LASF104
+ 785 0557 08       		.byte	0x8
+ 786 0558 7C       		.byte	0x7c
+ 787 0559 97000000 		.4byte	0x97
+ 788 055d 71       		.byte	0x71
+ 789 055e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 32
+
+
+ 790 055f 67080000 		.4byte	.LASF105
+ 791 0563 08       		.byte	0x8
+ 792 0564 7D       		.byte	0x7d
+ 793 0565 97000000 		.4byte	0x97
+ 794 0569 72       		.byte	0x72
+ 795 056a 0B       		.uleb128 0xb
+ 796 056b 5B040000 		.4byte	.LASF106
+ 797 056f 08       		.byte	0x8
+ 798 0570 7E       		.byte	0x7e
+ 799 0571 97000000 		.4byte	0x97
+ 800 0575 73       		.byte	0x73
+ 801 0576 0B       		.uleb128 0xb
+ 802 0577 39020000 		.4byte	.LASF107
+ 803 057b 08       		.byte	0x8
+ 804 057c 80       		.byte	0x80
+ 805 057d AD000000 		.4byte	0xad
+ 806 0581 74       		.byte	0x74
+ 807 0582 0B       		.uleb128 0xb
+ 808 0583 36070000 		.4byte	.LASF108
+ 809 0587 08       		.byte	0x8
+ 810 0588 81       		.byte	0x81
+ 811 0589 AD000000 		.4byte	0xad
+ 812 058d 76       		.byte	0x76
+ 813 058e 0B       		.uleb128 0xb
+ 814 058f 14020000 		.4byte	.LASF109
+ 815 0593 08       		.byte	0x8
+ 816 0594 82       		.byte	0x82
+ 817 0595 AD000000 		.4byte	0xad
+ 818 0599 78       		.byte	0x78
+ 819 059a 0B       		.uleb128 0xb
+ 820 059b A5000000 		.4byte	.LASF110
+ 821 059f 08       		.byte	0x8
+ 822 05a0 83       		.byte	0x83
+ 823 05a1 AD000000 		.4byte	0xad
+ 824 05a5 7A       		.byte	0x7a
+ 825 05a6 0B       		.uleb128 0xb
+ 826 05a7 09080000 		.4byte	.LASF111
+ 827 05ab 08       		.byte	0x8
+ 828 05ac 86       		.byte	0x86
+ 829 05ad 97000000 		.4byte	0x97
+ 830 05b1 7C       		.byte	0x7c
+ 831 05b2 0B       		.uleb128 0xb
+ 832 05b3 B6070000 		.4byte	.LASF112
+ 833 05b7 08       		.byte	0x8
+ 834 05b8 87       		.byte	0x87
+ 835 05b9 97000000 		.4byte	0x97
+ 836 05bd 7D       		.byte	0x7d
+ 837 05be 0B       		.uleb128 0xb
+ 838 05bf 26000000 		.4byte	.LASF113
+ 839 05c3 08       		.byte	0x8
+ 840 05c4 88       		.byte	0x88
+ 841 05c5 97000000 		.4byte	0x97
+ 842 05c9 7E       		.byte	0x7e
+ 843 05ca 0B       		.uleb128 0xb
+ 844 05cb 4B020000 		.4byte	.LASF114
+ 845 05cf 08       		.byte	0x8
+ 846 05d0 89       		.byte	0x89
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 33
+
+
+ 847 05d1 97000000 		.4byte	0x97
+ 848 05d5 7F       		.byte	0x7f
+ 849 05d6 0B       		.uleb128 0xb
+ 850 05d7 95020000 		.4byte	.LASF115
+ 851 05db 08       		.byte	0x8
+ 852 05dc 8A       		.byte	0x8a
+ 853 05dd 97000000 		.4byte	0x97
+ 854 05e1 80       		.byte	0x80
+ 855 05e2 0B       		.uleb128 0xb
+ 856 05e3 E4030000 		.4byte	.LASF116
+ 857 05e7 08       		.byte	0x8
+ 858 05e8 8D       		.byte	0x8d
+ 859 05e9 B8000000 		.4byte	0xb8
+ 860 05ed 84       		.byte	0x84
+ 861 05ee 0B       		.uleb128 0xb
+ 862 05ef BA000000 		.4byte	.LASF117
+ 863 05f3 08       		.byte	0x8
+ 864 05f4 8E       		.byte	0x8e
+ 865 05f5 B8000000 		.4byte	0xb8
+ 866 05f9 88       		.byte	0x88
+ 867 05fa 0B       		.uleb128 0xb
+ 868 05fb F4070000 		.4byte	.LASF118
+ 869 05ff 08       		.byte	0x8
+ 870 0600 8F       		.byte	0x8f
+ 871 0601 B8000000 		.4byte	0xb8
+ 872 0605 8C       		.byte	0x8c
+ 873 0606 0B       		.uleb128 0xb
+ 874 0607 A9020000 		.4byte	.LASF119
+ 875 060b 08       		.byte	0x8
+ 876 060c 90       		.byte	0x90
+ 877 060d B8000000 		.4byte	0xb8
+ 878 0611 90       		.byte	0x90
+ 879 0612 0B       		.uleb128 0xb
+ 880 0613 98030000 		.4byte	.LASF120
+ 881 0617 08       		.byte	0x8
+ 882 0618 91       		.byte	0x91
+ 883 0619 B8000000 		.4byte	0xb8
+ 884 061d 94       		.byte	0x94
+ 885 061e 0B       		.uleb128 0xb
+ 886 061f CE030000 		.4byte	.LASF121
+ 887 0623 08       		.byte	0x8
+ 888 0624 92       		.byte	0x92
+ 889 0625 B8000000 		.4byte	0xb8
+ 890 0629 98       		.byte	0x98
+ 891 062a 0B       		.uleb128 0xb
+ 892 062b 30080000 		.4byte	.LASF122
+ 893 062f 08       		.byte	0x8
+ 894 0630 93       		.byte	0x93
+ 895 0631 B8000000 		.4byte	0xb8
+ 896 0635 9C       		.byte	0x9c
+ 897 0636 0B       		.uleb128 0xb
+ 898 0637 26010000 		.4byte	.LASF123
+ 899 063b 08       		.byte	0x8
+ 900 063c 94       		.byte	0x94
+ 901 063d B8000000 		.4byte	0xb8
+ 902 0641 A0       		.byte	0xa0
+ 903 0642 0B       		.uleb128 0xb
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 34
+
+
+ 904 0643 6F050000 		.4byte	.LASF124
+ 905 0647 08       		.byte	0x8
+ 906 0648 95       		.byte	0x95
+ 907 0649 AD000000 		.4byte	0xad
+ 908 064d A4       		.byte	0xa4
+ 909 064e 0B       		.uleb128 0xb
+ 910 064f B9030000 		.4byte	.LASF125
+ 911 0653 08       		.byte	0x8
+ 912 0654 96       		.byte	0x96
+ 913 0655 AD000000 		.4byte	0xad
+ 914 0659 A6       		.byte	0xa6
+ 915 065a 0B       		.uleb128 0xb
+ 916 065b 31050000 		.4byte	.LASF126
+ 917 065f 08       		.byte	0x8
+ 918 0660 97       		.byte	0x97
+ 919 0661 AD000000 		.4byte	0xad
+ 920 0665 A8       		.byte	0xa8
+ 921 0666 0B       		.uleb128 0xb
+ 922 0667 07070000 		.4byte	.LASF127
+ 923 066b 08       		.byte	0x8
+ 924 066c 98       		.byte	0x98
+ 925 066d AD000000 		.4byte	0xad
+ 926 0671 AA       		.byte	0xaa
+ 927 0672 0B       		.uleb128 0xb
+ 928 0673 61030000 		.4byte	.LASF128
+ 929 0677 08       		.byte	0x8
+ 930 0678 99       		.byte	0x99
+ 931 0679 AD000000 		.4byte	0xad
+ 932 067d AC       		.byte	0xac
+ 933 067e 0B       		.uleb128 0xb
+ 934 067f 7F040000 		.4byte	.LASF129
+ 935 0683 08       		.byte	0x8
+ 936 0684 9A       		.byte	0x9a
+ 937 0685 AD000000 		.4byte	0xad
+ 938 0689 AE       		.byte	0xae
+ 939 068a 0B       		.uleb128 0xb
+ 940 068b 9B070000 		.4byte	.LASF130
+ 941 068f 08       		.byte	0x8
+ 942 0690 9D       		.byte	0x9d
+ 943 0691 AD000000 		.4byte	0xad
+ 944 0695 B0       		.byte	0xb0
+ 945 0696 0B       		.uleb128 0xb
+ 946 0697 39000000 		.4byte	.LASF131
+ 947 069b 08       		.byte	0x8
+ 948 069c 9E       		.byte	0x9e
+ 949 069d B8000000 		.4byte	0xb8
+ 950 06a1 B4       		.byte	0xb4
+ 951 06a2 00       		.byte	0
+ 952 06a3 03       		.uleb128 0x3
+ 953 06a4 88030000 		.4byte	.LASF132
+ 954 06a8 08       		.byte	0x8
+ 955 06a9 9F       		.byte	0x9f
+ 956 06aa 92020000 		.4byte	0x292
+ 957 06ae 0E       		.uleb128 0xe
+ 958 06af DC020000 		.4byte	.LASF133
+ 959 06b3 09       		.byte	0x9
+ 960 06b4 F601     		.2byte	0x1f6
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 35
+
+
+ 961 06b6 BA060000 		.4byte	0x6ba
+ 962 06ba 02       		.uleb128 0x2
+ 963 06bb 01       		.byte	0x1
+ 964 06bc 08       		.byte	0x8
+ 965 06bd D2060000 		.4byte	.LASF134
+ 966 06c1 02       		.uleb128 0x2
+ 967 06c2 04       		.byte	0x4
+ 968 06c3 04       		.byte	0x4
+ 969 06c4 F0040000 		.4byte	.LASF135
+ 970 06c8 02       		.uleb128 0x2
+ 971 06c9 08       		.byte	0x8
+ 972 06ca 04       		.byte	0x4
+ 973 06cb 0D020000 		.4byte	.LASF136
+ 974 06cf 02       		.uleb128 0x2
+ 975 06d0 01       		.byte	0x1
+ 976 06d1 02       		.byte	0x2
+ 977 06d2 5B050000 		.4byte	.LASF137
+ 978 06d6 0F       		.uleb128 0xf
+ 979 06d7 DB040000 		.4byte	.LASF144
+ 980 06db 02       		.byte	0x2
+ 981 06dc 81       		.byte	0x81
+ 982 06dd 03       		.byte	0x3
+ 983 06de 10       		.uleb128 0x10
+ 984 06df B9010000 		.4byte	.LASF145
+ 985 06e3 03       		.byte	0x3
+ 986 06e4 2503     		.2byte	0x325
+ 987 06e6 03       		.byte	0x3
+ 988 06e7 10070000 		.4byte	0x710
+ 989 06eb 11       		.uleb128 0x11
+ 990 06ec 1A040000 		.4byte	.LASF138
+ 991 06f0 03       		.byte	0x3
+ 992 06f1 2503     		.2byte	0x325
+ 993 06f3 10070000 		.4byte	0x710
+ 994 06f7 11       		.uleb128 0x11
+ 995 06f8 F6050000 		.4byte	.LASF139
+ 996 06fc 03       		.byte	0x3
+ 997 06fd 2503     		.2byte	0x325
+ 998 06ff B8000000 		.4byte	0xb8
+ 999 0703 11       		.uleb128 0x11
+ 1000 0704 8F020000 		.4byte	.LASF140
+ 1001 0708 03       		.byte	0x3
+ 1002 0709 2503     		.2byte	0x325
+ 1003 070b B8000000 		.4byte	0xb8
+ 1004 070f 00       		.byte	0
+ 1005 0710 12       		.uleb128 0x12
+ 1006 0711 04       		.byte	0x4
+ 1007 0712 73020000 		.4byte	0x273
+ 1008 0716 13       		.uleb128 0x13
+ 1009 0717 34020000 		.4byte	.LASF146
+ 1010 071b 01       		.byte	0x1
+ 1011 071c 0E       		.byte	0xe
+ 1012 071d 89000000 		.4byte	0x89
+ 1013 0721 00000000 		.4byte	.LFB240
+ 1014 0725 30000000 		.4byte	.LFE240-.LFB240
+ 1015 0729 01       		.uleb128 0x1
+ 1016 072a 9C       		.byte	0x9c
+ 1017 072b 19080000 		.4byte	0x819
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 36
+
+
+ 1018 072f 14       		.uleb128 0x14
+ 1019 0730 D6060000 		.4byte	0x6d6
+ 1020 0734 02000000 		.4byte	.LBB14
+ 1021 0738 02000000 		.4byte	.LBE14-.LBB14
+ 1022 073c 01       		.byte	0x1
+ 1023 073d 10       		.byte	0x10
+ 1024 073e 15       		.uleb128 0x15
+ 1025 073f DE060000 		.4byte	0x6de
+ 1026 0743 04000000 		.4byte	.LBB16
+ 1027 0747 06000000 		.4byte	.LBE16-.LBB16
+ 1028 074b 01       		.byte	0x1
+ 1029 074c 18       		.byte	0x18
+ 1030 074d 6D070000 		.4byte	0x76d
+ 1031 0751 16       		.uleb128 0x16
+ 1032 0752 03070000 		.4byte	0x703
+ 1033 0756 00000000 		.4byte	.LLST0
+ 1034 075a 16       		.uleb128 0x16
+ 1035 075b F7060000 		.4byte	0x6f7
+ 1036 075f 14000000 		.4byte	.LLST1
+ 1037 0763 16       		.uleb128 0x16
+ 1038 0764 EB060000 		.4byte	0x6eb
+ 1039 0768 28000000 		.4byte	.LLST2
+ 1040 076c 00       		.byte	0
+ 1041 076d 15       		.uleb128 0x15
+ 1042 076e DE060000 		.4byte	0x6de
+ 1043 0772 14000000 		.4byte	.LBB18
+ 1044 0776 02000000 		.4byte	.LBE18-.LBB18
+ 1045 077a 01       		.byte	0x1
+ 1046 077b 1A       		.byte	0x1a
+ 1047 077c 9C070000 		.4byte	0x79c
+ 1048 0780 16       		.uleb128 0x16
+ 1049 0781 03070000 		.4byte	0x703
+ 1050 0785 40000000 		.4byte	.LLST3
+ 1051 0789 16       		.uleb128 0x16
+ 1052 078a F7060000 		.4byte	0x6f7
+ 1053 078e 54000000 		.4byte	.LLST4
+ 1054 0792 16       		.uleb128 0x16
+ 1055 0793 EB060000 		.4byte	0x6eb
+ 1056 0797 68000000 		.4byte	.LLST5
+ 1057 079b 00       		.byte	0
+ 1058 079c 15       		.uleb128 0x15
+ 1059 079d DE060000 		.4byte	0x6de
+ 1060 07a1 16000000 		.4byte	.LBB20
+ 1061 07a5 06000000 		.4byte	.LBE20-.LBB20
+ 1062 07a9 01       		.byte	0x1
+ 1063 07aa 1B       		.byte	0x1b
+ 1064 07ab CB070000 		.4byte	0x7cb
+ 1065 07af 16       		.uleb128 0x16
+ 1066 07b0 03070000 		.4byte	0x703
+ 1067 07b4 80000000 		.4byte	.LLST6
+ 1068 07b8 16       		.uleb128 0x16
+ 1069 07b9 F7060000 		.4byte	0x6f7
+ 1070 07bd 80000000 		.4byte	.LLST6
+ 1071 07c1 16       		.uleb128 0x16
+ 1072 07c2 EB060000 		.4byte	0x6eb
+ 1073 07c6 94000000 		.4byte	.LLST8
+ 1074 07ca 00       		.byte	0
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 37
+
+
+ 1075 07cb 15       		.uleb128 0x15
+ 1076 07cc DE060000 		.4byte	0x6de
+ 1077 07d0 22000000 		.4byte	.LBB22
+ 1078 07d4 0E000000 		.4byte	.LBE22-.LBB22
+ 1079 07d8 01       		.byte	0x1
+ 1080 07d9 1D       		.byte	0x1d
+ 1081 07da F4070000 		.4byte	0x7f4
+ 1082 07de 17       		.uleb128 0x17
+ 1083 07df 03070000 		.4byte	0x703
+ 1084 07e3 00       		.byte	0
+ 1085 07e4 17       		.uleb128 0x17
+ 1086 07e5 F7060000 		.4byte	0x6f7
+ 1087 07e9 01       		.byte	0x1
+ 1088 07ea 18       		.uleb128 0x18
+ 1089 07eb EB060000 		.4byte	0x6eb
+ 1090 07ef 80033240 		.4byte	0x40320380
+ 1091 07f3 00       		.byte	0
+ 1092 07f4 19       		.uleb128 0x19
+ 1093 07f5 14000000 		.4byte	.LVL2
+ 1094 07f9 2F080000 		.4byte	0x82f
+ 1095 07fd 08080000 		.4byte	0x808
+ 1096 0801 1A       		.uleb128 0x1a
+ 1097 0802 01       		.uleb128 0x1
+ 1098 0803 50       		.byte	0x50
+ 1099 0804 02       		.uleb128 0x2
+ 1100 0805 76       		.byte	0x76
+ 1101 0806 00       		.sleb128 0
+ 1102 0807 00       		.byte	0
+ 1103 0808 1B       		.uleb128 0x1b
+ 1104 0809 22000000 		.4byte	.LVL5
+ 1105 080d 2F080000 		.4byte	0x82f
+ 1106 0811 1A       		.uleb128 0x1a
+ 1107 0812 01       		.uleb128 0x1
+ 1108 0813 50       		.byte	0x50
+ 1109 0814 02       		.uleb128 0x2
+ 1110 0815 76       		.byte	0x76
+ 1111 0816 00       		.sleb128 0
+ 1112 0817 00       		.byte	0
+ 1113 0818 00       		.byte	0
+ 1114 0819 1C       		.uleb128 0x1c
+ 1115 081a 27050000 		.4byte	.LASF147
+ 1116 081e 08       		.byte	0x8
+ 1117 081f A7       		.byte	0xa7
+ 1118 0820 24080000 		.4byte	0x824
+ 1119 0824 12       		.uleb128 0x12
+ 1120 0825 04       		.byte	0x4
+ 1121 0826 2A080000 		.4byte	0x82a
+ 1122 082a 06       		.uleb128 0x6
+ 1123 082b A3060000 		.4byte	0x6a3
+ 1124 082f 1D       		.uleb128 0x1d
+ 1125 0830 24060000 		.4byte	.LASF148
+ 1126 0834 24060000 		.4byte	.LASF148
+ 1127 0838 09       		.byte	0x9
+ 1128 0839 8903     		.2byte	0x389
+ 1129 083b 00       		.byte	0
+ 1130              		.section	.debug_abbrev,"",%progbits
+ 1131              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 38
+
+
+ 1132 0000 01       		.uleb128 0x1
+ 1133 0001 11       		.uleb128 0x11
+ 1134 0002 01       		.byte	0x1
+ 1135 0003 25       		.uleb128 0x25
+ 1136 0004 0E       		.uleb128 0xe
+ 1137 0005 13       		.uleb128 0x13
+ 1138 0006 0B       		.uleb128 0xb
+ 1139 0007 03       		.uleb128 0x3
+ 1140 0008 0E       		.uleb128 0xe
+ 1141 0009 1B       		.uleb128 0x1b
+ 1142 000a 0E       		.uleb128 0xe
+ 1143 000b 55       		.uleb128 0x55
+ 1144 000c 17       		.uleb128 0x17
+ 1145 000d 11       		.uleb128 0x11
+ 1146 000e 01       		.uleb128 0x1
+ 1147 000f 10       		.uleb128 0x10
+ 1148 0010 17       		.uleb128 0x17
+ 1149 0011 00       		.byte	0
+ 1150 0012 00       		.byte	0
+ 1151 0013 02       		.uleb128 0x2
+ 1152 0014 24       		.uleb128 0x24
+ 1153 0015 00       		.byte	0
+ 1154 0016 0B       		.uleb128 0xb
+ 1155 0017 0B       		.uleb128 0xb
+ 1156 0018 3E       		.uleb128 0x3e
+ 1157 0019 0B       		.uleb128 0xb
+ 1158 001a 03       		.uleb128 0x3
+ 1159 001b 0E       		.uleb128 0xe
+ 1160 001c 00       		.byte	0
+ 1161 001d 00       		.byte	0
+ 1162 001e 03       		.uleb128 0x3
+ 1163 001f 16       		.uleb128 0x16
+ 1164 0020 00       		.byte	0
+ 1165 0021 03       		.uleb128 0x3
+ 1166 0022 0E       		.uleb128 0xe
+ 1167 0023 3A       		.uleb128 0x3a
+ 1168 0024 0B       		.uleb128 0xb
+ 1169 0025 3B       		.uleb128 0x3b
+ 1170 0026 0B       		.uleb128 0xb
+ 1171 0027 49       		.uleb128 0x49
+ 1172 0028 13       		.uleb128 0x13
+ 1173 0029 00       		.byte	0
+ 1174 002a 00       		.byte	0
+ 1175 002b 04       		.uleb128 0x4
+ 1176 002c 24       		.uleb128 0x24
+ 1177 002d 00       		.byte	0
+ 1178 002e 0B       		.uleb128 0xb
+ 1179 002f 0B       		.uleb128 0xb
+ 1180 0030 3E       		.uleb128 0x3e
+ 1181 0031 0B       		.uleb128 0xb
+ 1182 0032 03       		.uleb128 0x3
+ 1183 0033 08       		.uleb128 0x8
+ 1184 0034 00       		.byte	0
+ 1185 0035 00       		.byte	0
+ 1186 0036 05       		.uleb128 0x5
+ 1187 0037 35       		.uleb128 0x35
+ 1188 0038 00       		.byte	0
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 39
+
+
+ 1189 0039 49       		.uleb128 0x49
+ 1190 003a 13       		.uleb128 0x13
+ 1191 003b 00       		.byte	0
+ 1192 003c 00       		.byte	0
+ 1193 003d 06       		.uleb128 0x6
+ 1194 003e 26       		.uleb128 0x26
+ 1195 003f 00       		.byte	0
+ 1196 0040 49       		.uleb128 0x49
+ 1197 0041 13       		.uleb128 0x13
+ 1198 0042 00       		.byte	0
+ 1199 0043 00       		.byte	0
+ 1200 0044 07       		.uleb128 0x7
+ 1201 0045 01       		.uleb128 0x1
+ 1202 0046 01       		.byte	0x1
+ 1203 0047 49       		.uleb128 0x49
+ 1204 0048 13       		.uleb128 0x13
+ 1205 0049 01       		.uleb128 0x1
+ 1206 004a 13       		.uleb128 0x13
+ 1207 004b 00       		.byte	0
+ 1208 004c 00       		.byte	0
+ 1209 004d 08       		.uleb128 0x8
+ 1210 004e 21       		.uleb128 0x21
+ 1211 004f 00       		.byte	0
+ 1212 0050 49       		.uleb128 0x49
+ 1213 0051 13       		.uleb128 0x13
+ 1214 0052 2F       		.uleb128 0x2f
+ 1215 0053 0B       		.uleb128 0xb
+ 1216 0054 00       		.byte	0
+ 1217 0055 00       		.byte	0
+ 1218 0056 09       		.uleb128 0x9
+ 1219 0057 13       		.uleb128 0x13
+ 1220 0058 01       		.byte	0x1
+ 1221 0059 0B       		.uleb128 0xb
+ 1222 005a 0B       		.uleb128 0xb
+ 1223 005b 3A       		.uleb128 0x3a
+ 1224 005c 0B       		.uleb128 0xb
+ 1225 005d 3B       		.uleb128 0x3b
+ 1226 005e 0B       		.uleb128 0xb
+ 1227 005f 01       		.uleb128 0x1
+ 1228 0060 13       		.uleb128 0x13
+ 1229 0061 00       		.byte	0
+ 1230 0062 00       		.byte	0
+ 1231 0063 0A       		.uleb128 0xa
+ 1232 0064 0D       		.uleb128 0xd
+ 1233 0065 00       		.byte	0
+ 1234 0066 03       		.uleb128 0x3
+ 1235 0067 08       		.uleb128 0x8
+ 1236 0068 3A       		.uleb128 0x3a
+ 1237 0069 0B       		.uleb128 0xb
+ 1238 006a 3B       		.uleb128 0x3b
+ 1239 006b 0B       		.uleb128 0xb
+ 1240 006c 49       		.uleb128 0x49
+ 1241 006d 13       		.uleb128 0x13
+ 1242 006e 38       		.uleb128 0x38
+ 1243 006f 0B       		.uleb128 0xb
+ 1244 0070 00       		.byte	0
+ 1245 0071 00       		.byte	0
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 40
+
+
+ 1246 0072 0B       		.uleb128 0xb
+ 1247 0073 0D       		.uleb128 0xd
+ 1248 0074 00       		.byte	0
+ 1249 0075 03       		.uleb128 0x3
+ 1250 0076 0E       		.uleb128 0xe
+ 1251 0077 3A       		.uleb128 0x3a
+ 1252 0078 0B       		.uleb128 0xb
+ 1253 0079 3B       		.uleb128 0x3b
+ 1254 007a 0B       		.uleb128 0xb
+ 1255 007b 49       		.uleb128 0x49
+ 1256 007c 13       		.uleb128 0x13
+ 1257 007d 38       		.uleb128 0x38
+ 1258 007e 0B       		.uleb128 0xb
+ 1259 007f 00       		.byte	0
+ 1260 0080 00       		.byte	0
+ 1261 0081 0C       		.uleb128 0xc
+ 1262 0082 13       		.uleb128 0x13
+ 1263 0083 01       		.byte	0x1
+ 1264 0084 0B       		.uleb128 0xb
+ 1265 0085 05       		.uleb128 0x5
+ 1266 0086 3A       		.uleb128 0x3a
+ 1267 0087 0B       		.uleb128 0xb
+ 1268 0088 3B       		.uleb128 0x3b
+ 1269 0089 0B       		.uleb128 0xb
+ 1270 008a 01       		.uleb128 0x1
+ 1271 008b 13       		.uleb128 0x13
+ 1272 008c 00       		.byte	0
+ 1273 008d 00       		.byte	0
+ 1274 008e 0D       		.uleb128 0xd
+ 1275 008f 0D       		.uleb128 0xd
+ 1276 0090 00       		.byte	0
+ 1277 0091 03       		.uleb128 0x3
+ 1278 0092 0E       		.uleb128 0xe
+ 1279 0093 3A       		.uleb128 0x3a
+ 1280 0094 0B       		.uleb128 0xb
+ 1281 0095 3B       		.uleb128 0x3b
+ 1282 0096 0B       		.uleb128 0xb
+ 1283 0097 49       		.uleb128 0x49
+ 1284 0098 13       		.uleb128 0x13
+ 1285 0099 38       		.uleb128 0x38
+ 1286 009a 05       		.uleb128 0x5
+ 1287 009b 00       		.byte	0
+ 1288 009c 00       		.byte	0
+ 1289 009d 0E       		.uleb128 0xe
+ 1290 009e 16       		.uleb128 0x16
+ 1291 009f 00       		.byte	0
+ 1292 00a0 03       		.uleb128 0x3
+ 1293 00a1 0E       		.uleb128 0xe
+ 1294 00a2 3A       		.uleb128 0x3a
+ 1295 00a3 0B       		.uleb128 0xb
+ 1296 00a4 3B       		.uleb128 0x3b
+ 1297 00a5 05       		.uleb128 0x5
+ 1298 00a6 49       		.uleb128 0x49
+ 1299 00a7 13       		.uleb128 0x13
+ 1300 00a8 00       		.byte	0
+ 1301 00a9 00       		.byte	0
+ 1302 00aa 0F       		.uleb128 0xf
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 41
+
+
+ 1303 00ab 2E       		.uleb128 0x2e
+ 1304 00ac 00       		.byte	0
+ 1305 00ad 03       		.uleb128 0x3
+ 1306 00ae 0E       		.uleb128 0xe
+ 1307 00af 3A       		.uleb128 0x3a
+ 1308 00b0 0B       		.uleb128 0xb
+ 1309 00b1 3B       		.uleb128 0x3b
+ 1310 00b2 0B       		.uleb128 0xb
+ 1311 00b3 27       		.uleb128 0x27
+ 1312 00b4 19       		.uleb128 0x19
+ 1313 00b5 20       		.uleb128 0x20
+ 1314 00b6 0B       		.uleb128 0xb
+ 1315 00b7 00       		.byte	0
+ 1316 00b8 00       		.byte	0
+ 1317 00b9 10       		.uleb128 0x10
+ 1318 00ba 2E       		.uleb128 0x2e
+ 1319 00bb 01       		.byte	0x1
+ 1320 00bc 03       		.uleb128 0x3
+ 1321 00bd 0E       		.uleb128 0xe
+ 1322 00be 3A       		.uleb128 0x3a
+ 1323 00bf 0B       		.uleb128 0xb
+ 1324 00c0 3B       		.uleb128 0x3b
+ 1325 00c1 05       		.uleb128 0x5
+ 1326 00c2 27       		.uleb128 0x27
+ 1327 00c3 19       		.uleb128 0x19
+ 1328 00c4 20       		.uleb128 0x20
+ 1329 00c5 0B       		.uleb128 0xb
+ 1330 00c6 01       		.uleb128 0x1
+ 1331 00c7 13       		.uleb128 0x13
+ 1332 00c8 00       		.byte	0
+ 1333 00c9 00       		.byte	0
+ 1334 00ca 11       		.uleb128 0x11
+ 1335 00cb 05       		.uleb128 0x5
+ 1336 00cc 00       		.byte	0
+ 1337 00cd 03       		.uleb128 0x3
+ 1338 00ce 0E       		.uleb128 0xe
+ 1339 00cf 3A       		.uleb128 0x3a
+ 1340 00d0 0B       		.uleb128 0xb
+ 1341 00d1 3B       		.uleb128 0x3b
+ 1342 00d2 05       		.uleb128 0x5
+ 1343 00d3 49       		.uleb128 0x49
+ 1344 00d4 13       		.uleb128 0x13
+ 1345 00d5 00       		.byte	0
+ 1346 00d6 00       		.byte	0
+ 1347 00d7 12       		.uleb128 0x12
+ 1348 00d8 0F       		.uleb128 0xf
+ 1349 00d9 00       		.byte	0
+ 1350 00da 0B       		.uleb128 0xb
+ 1351 00db 0B       		.uleb128 0xb
+ 1352 00dc 49       		.uleb128 0x49
+ 1353 00dd 13       		.uleb128 0x13
+ 1354 00de 00       		.byte	0
+ 1355 00df 00       		.byte	0
+ 1356 00e0 13       		.uleb128 0x13
+ 1357 00e1 2E       		.uleb128 0x2e
+ 1358 00e2 01       		.byte	0x1
+ 1359 00e3 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 42
+
+
+ 1360 00e4 19       		.uleb128 0x19
+ 1361 00e5 03       		.uleb128 0x3
+ 1362 00e6 0E       		.uleb128 0xe
+ 1363 00e7 3A       		.uleb128 0x3a
+ 1364 00e8 0B       		.uleb128 0xb
+ 1365 00e9 3B       		.uleb128 0x3b
+ 1366 00ea 0B       		.uleb128 0xb
+ 1367 00eb 27       		.uleb128 0x27
+ 1368 00ec 19       		.uleb128 0x19
+ 1369 00ed 49       		.uleb128 0x49
+ 1370 00ee 13       		.uleb128 0x13
+ 1371 00ef 8701     		.uleb128 0x87
+ 1372 00f1 19       		.uleb128 0x19
+ 1373 00f2 11       		.uleb128 0x11
+ 1374 00f3 01       		.uleb128 0x1
+ 1375 00f4 12       		.uleb128 0x12
+ 1376 00f5 06       		.uleb128 0x6
+ 1377 00f6 40       		.uleb128 0x40
+ 1378 00f7 18       		.uleb128 0x18
+ 1379 00f8 9742     		.uleb128 0x2117
+ 1380 00fa 19       		.uleb128 0x19
+ 1381 00fb 01       		.uleb128 0x1
+ 1382 00fc 13       		.uleb128 0x13
+ 1383 00fd 00       		.byte	0
+ 1384 00fe 00       		.byte	0
+ 1385 00ff 14       		.uleb128 0x14
+ 1386 0100 1D       		.uleb128 0x1d
+ 1387 0101 00       		.byte	0
+ 1388 0102 31       		.uleb128 0x31
+ 1389 0103 13       		.uleb128 0x13
+ 1390 0104 11       		.uleb128 0x11
+ 1391 0105 01       		.uleb128 0x1
+ 1392 0106 12       		.uleb128 0x12
+ 1393 0107 06       		.uleb128 0x6
+ 1394 0108 58       		.uleb128 0x58
+ 1395 0109 0B       		.uleb128 0xb
+ 1396 010a 59       		.uleb128 0x59
+ 1397 010b 0B       		.uleb128 0xb
+ 1398 010c 00       		.byte	0
+ 1399 010d 00       		.byte	0
+ 1400 010e 15       		.uleb128 0x15
+ 1401 010f 1D       		.uleb128 0x1d
+ 1402 0110 01       		.byte	0x1
+ 1403 0111 31       		.uleb128 0x31
+ 1404 0112 13       		.uleb128 0x13
+ 1405 0113 11       		.uleb128 0x11
+ 1406 0114 01       		.uleb128 0x1
+ 1407 0115 12       		.uleb128 0x12
+ 1408 0116 06       		.uleb128 0x6
+ 1409 0117 58       		.uleb128 0x58
+ 1410 0118 0B       		.uleb128 0xb
+ 1411 0119 59       		.uleb128 0x59
+ 1412 011a 0B       		.uleb128 0xb
+ 1413 011b 01       		.uleb128 0x1
+ 1414 011c 13       		.uleb128 0x13
+ 1415 011d 00       		.byte	0
+ 1416 011e 00       		.byte	0
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 43
+
+
+ 1417 011f 16       		.uleb128 0x16
+ 1418 0120 05       		.uleb128 0x5
+ 1419 0121 00       		.byte	0
+ 1420 0122 31       		.uleb128 0x31
+ 1421 0123 13       		.uleb128 0x13
+ 1422 0124 02       		.uleb128 0x2
+ 1423 0125 17       		.uleb128 0x17
+ 1424 0126 00       		.byte	0
+ 1425 0127 00       		.byte	0
+ 1426 0128 17       		.uleb128 0x17
+ 1427 0129 05       		.uleb128 0x5
+ 1428 012a 00       		.byte	0
+ 1429 012b 31       		.uleb128 0x31
+ 1430 012c 13       		.uleb128 0x13
+ 1431 012d 1C       		.uleb128 0x1c
+ 1432 012e 0B       		.uleb128 0xb
+ 1433 012f 00       		.byte	0
+ 1434 0130 00       		.byte	0
+ 1435 0131 18       		.uleb128 0x18
+ 1436 0132 05       		.uleb128 0x5
+ 1437 0133 00       		.byte	0
+ 1438 0134 31       		.uleb128 0x31
+ 1439 0135 13       		.uleb128 0x13
+ 1440 0136 1C       		.uleb128 0x1c
+ 1441 0137 06       		.uleb128 0x6
+ 1442 0138 00       		.byte	0
+ 1443 0139 00       		.byte	0
+ 1444 013a 19       		.uleb128 0x19
+ 1445 013b 898201   		.uleb128 0x4109
+ 1446 013e 01       		.byte	0x1
+ 1447 013f 11       		.uleb128 0x11
+ 1448 0140 01       		.uleb128 0x1
+ 1449 0141 31       		.uleb128 0x31
+ 1450 0142 13       		.uleb128 0x13
+ 1451 0143 01       		.uleb128 0x1
+ 1452 0144 13       		.uleb128 0x13
+ 1453 0145 00       		.byte	0
+ 1454 0146 00       		.byte	0
+ 1455 0147 1A       		.uleb128 0x1a
+ 1456 0148 8A8201   		.uleb128 0x410a
+ 1457 014b 00       		.byte	0
+ 1458 014c 02       		.uleb128 0x2
+ 1459 014d 18       		.uleb128 0x18
+ 1460 014e 9142     		.uleb128 0x2111
+ 1461 0150 18       		.uleb128 0x18
+ 1462 0151 00       		.byte	0
+ 1463 0152 00       		.byte	0
+ 1464 0153 1B       		.uleb128 0x1b
+ 1465 0154 898201   		.uleb128 0x4109
+ 1466 0157 01       		.byte	0x1
+ 1467 0158 11       		.uleb128 0x11
+ 1468 0159 01       		.uleb128 0x1
+ 1469 015a 31       		.uleb128 0x31
+ 1470 015b 13       		.uleb128 0x13
+ 1471 015c 00       		.byte	0
+ 1472 015d 00       		.byte	0
+ 1473 015e 1C       		.uleb128 0x1c
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 44
+
+
+ 1474 015f 34       		.uleb128 0x34
+ 1475 0160 00       		.byte	0
+ 1476 0161 03       		.uleb128 0x3
+ 1477 0162 0E       		.uleb128 0xe
+ 1478 0163 3A       		.uleb128 0x3a
+ 1479 0164 0B       		.uleb128 0xb
+ 1480 0165 3B       		.uleb128 0x3b
+ 1481 0166 0B       		.uleb128 0xb
+ 1482 0167 49       		.uleb128 0x49
+ 1483 0168 13       		.uleb128 0x13
+ 1484 0169 3F       		.uleb128 0x3f
+ 1485 016a 19       		.uleb128 0x19
+ 1486 016b 3C       		.uleb128 0x3c
+ 1487 016c 19       		.uleb128 0x19
+ 1488 016d 00       		.byte	0
+ 1489 016e 00       		.byte	0
+ 1490 016f 1D       		.uleb128 0x1d
+ 1491 0170 2E       		.uleb128 0x2e
+ 1492 0171 00       		.byte	0
+ 1493 0172 3F       		.uleb128 0x3f
+ 1494 0173 19       		.uleb128 0x19
+ 1495 0174 3C       		.uleb128 0x3c
+ 1496 0175 19       		.uleb128 0x19
+ 1497 0176 6E       		.uleb128 0x6e
+ 1498 0177 0E       		.uleb128 0xe
+ 1499 0178 03       		.uleb128 0x3
+ 1500 0179 0E       		.uleb128 0xe
+ 1501 017a 3A       		.uleb128 0x3a
+ 1502 017b 0B       		.uleb128 0xb
+ 1503 017c 3B       		.uleb128 0x3b
+ 1504 017d 05       		.uleb128 0x5
+ 1505 017e 00       		.byte	0
+ 1506 017f 00       		.byte	0
+ 1507 0180 00       		.byte	0
+ 1508              		.section	.debug_loc,"",%progbits
+ 1509              	.Ldebug_loc0:
+ 1510              	.LLST0:
+ 1511 0000 04000000 		.4byte	.LVL0
+ 1512 0004 0A000000 		.4byte	.LVL1
+ 1513 0008 0200     		.2byte	0x2
+ 1514 000a 31       		.byte	0x31
+ 1515 000b 9F       		.byte	0x9f
+ 1516 000c 00000000 		.4byte	0
+ 1517 0010 00000000 		.4byte	0
+ 1518              	.LLST1:
+ 1519 0014 04000000 		.4byte	.LVL0
+ 1520 0018 0A000000 		.4byte	.LVL1
+ 1521 001c 0200     		.2byte	0x2
+ 1522 001e 33       		.byte	0x33
+ 1523 001f 9F       		.byte	0x9f
+ 1524 0020 00000000 		.4byte	0
+ 1525 0024 00000000 		.4byte	0
+ 1526              	.LLST2:
+ 1527 0028 04000000 		.4byte	.LVL0
+ 1528 002c 0A000000 		.4byte	.LVL1
+ 1529 0030 0600     		.2byte	0x6
+ 1530 0032 0C       		.byte	0xc
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 45
+
+
+ 1531 0033 00033240 		.4byte	0x40320300
+ 1532 0037 9F       		.byte	0x9f
+ 1533 0038 00000000 		.4byte	0
+ 1534 003c 00000000 		.4byte	0
+ 1535              	.LLST3:
+ 1536 0040 14000000 		.4byte	.LVL2
+ 1537 0044 16000000 		.4byte	.LVL3
+ 1538 0048 0200     		.2byte	0x2
+ 1539 004a 30       		.byte	0x30
+ 1540 004b 9F       		.byte	0x9f
+ 1541 004c 00000000 		.4byte	0
+ 1542 0050 00000000 		.4byte	0
+ 1543              	.LLST4:
+ 1544 0054 14000000 		.4byte	.LVL2
+ 1545 0058 16000000 		.4byte	.LVL3
+ 1546 005c 0200     		.2byte	0x2
+ 1547 005e 33       		.byte	0x33
+ 1548 005f 9F       		.byte	0x9f
+ 1549 0060 00000000 		.4byte	0
+ 1550 0064 00000000 		.4byte	0
+ 1551              	.LLST5:
+ 1552 0068 14000000 		.4byte	.LVL2
+ 1553 006c 16000000 		.4byte	.LVL3
+ 1554 0070 0600     		.2byte	0x6
+ 1555 0072 0C       		.byte	0xc
+ 1556 0073 00033240 		.4byte	0x40320300
+ 1557 0077 9F       		.byte	0x9f
+ 1558 0078 00000000 		.4byte	0
+ 1559 007c 00000000 		.4byte	0
+ 1560              	.LLST6:
+ 1561 0080 16000000 		.4byte	.LVL3
+ 1562 0084 1C000000 		.4byte	.LVL4
+ 1563 0088 0200     		.2byte	0x2
+ 1564 008a 31       		.byte	0x31
+ 1565 008b 9F       		.byte	0x9f
+ 1566 008c 00000000 		.4byte	0
+ 1567 0090 00000000 		.4byte	0
+ 1568              	.LLST8:
+ 1569 0094 16000000 		.4byte	.LVL3
+ 1570 0098 1C000000 		.4byte	.LVL4
+ 1571 009c 0600     		.2byte	0x6
+ 1572 009e 0C       		.byte	0xc
+ 1573 009f 80033240 		.4byte	0x40320380
+ 1574 00a3 9F       		.byte	0x9f
+ 1575 00a4 00000000 		.4byte	0
+ 1576 00a8 00000000 		.4byte	0
+ 1577              		.section	.debug_aranges,"",%progbits
+ 1578 0000 1C000000 		.4byte	0x1c
+ 1579 0004 0200     		.2byte	0x2
+ 1580 0006 00000000 		.4byte	.Ldebug_info0
+ 1581 000a 04       		.byte	0x4
+ 1582 000b 00       		.byte	0
+ 1583 000c 0000     		.2byte	0
+ 1584 000e 0000     		.2byte	0
+ 1585 0010 00000000 		.4byte	.LFB240
+ 1586 0014 30000000 		.4byte	.LFE240-.LFB240
+ 1587 0018 00000000 		.4byte	0
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 46
+
+
+ 1588 001c 00000000 		.4byte	0
+ 1589              		.section	.debug_ranges,"",%progbits
+ 1590              	.Ldebug_ranges0:
+ 1591 0000 00000000 		.4byte	.LFB240
+ 1592 0004 30000000 		.4byte	.LFE240
+ 1593 0008 00000000 		.4byte	0
+ 1594 000c 00000000 		.4byte	0
+ 1595              		.section	.debug_line,"",%progbits
+ 1596              	.Ldebug_line0:
+ 1597 0000 FA020000 		.section	.debug_str,"MS",%progbits,1
+ 1597      0200A802 
+ 1597      00000201 
+ 1597      FB0E0D00 
+ 1597      01010101 
+ 1598              	.LASF81:
+ 1599 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1599      4275734D 
+ 1599      61737465 
+ 1599      724D6173 
+ 1599      6B00
+ 1600              	.LASF91:
+ 1601 0012 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1601      6843746C 
+ 1601      4D61696E 
+ 1601      57733346 
+ 1601      72657100 
+ 1602              	.LASF113:
+ 1603 0026 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1603      50727443 
+ 1603      6667496E 
+ 1603      4F666673 
+ 1603      657400
+ 1604              	.LASF131:
+ 1605 0039 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1605      6F636B53 
+ 1605      74617475 
+ 1605      734F6666 
+ 1605      73657400 
+ 1606              	.LASF57:
+ 1607 004d 63727970 		.ascii	"cryptoVersion\000"
+ 1607      746F5665 
+ 1607      7273696F 
+ 1607      6E00
+ 1608              	.LASF75:
+ 1609 005b 70657269 		.ascii	"periClockNr\000"
+ 1609      436C6F63 
+ 1609      6B4E7200 
+ 1610              	.LASF53:
+ 1611 0067 70617373 		.ascii	"passBase\000"
+ 1611      42617365 
+ 1611      00
+ 1612              	.LASF142:
+ 1613 0070 6D61696E 		.ascii	"main_cm0p.c\000"
+ 1613      5F636D30 
+ 1613      702E6300 
+ 1614              	.LASF66:
+ 1615 007c 63707573 		.ascii	"cpussIpcIrqNr\000"
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 47
+
+
+ 1615      73497063 
+ 1615      4972714E 
+ 1615      7200
+ 1616              	.LASF3:
+ 1617 008a 5F5F7569 		.ascii	"__uint8_t\000"
+ 1617      6E74385F 
+ 1617      7400
+ 1618              	.LASF32:
+ 1619 0094 4750494F 		.ascii	"GPIO_PRT_V1_Type\000"
+ 1619      5F505254 
+ 1619      5F56315F 
+ 1619      54797065 
+ 1619      00
+ 1620              	.LASF110:
+ 1621 00a5 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1621      44697632 
+ 1621      345F3543 
+ 1621      746C4F66 
+ 1621      66736574 
+ 1622              	.LASF117:
+ 1623 00ba 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1623      73436D34 
+ 1623      436C6F63 
+ 1623      6B43746C 
+ 1623      4F666673 
+ 1624              	.LASF46:
+ 1625 00d1 63707573 		.ascii	"cpussBase\000"
+ 1625      73426173 
+ 1625      6500
+ 1626              	.LASF95:
+ 1627 00db 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1627      43746C50 
+ 1627      72696F50 
+ 1627      6F7300
+ 1628              	.LASF39:
+ 1629 00ea 5644445F 		.ascii	"VDD_INTR_MASK\000"
+ 1629      494E5452 
+ 1629      5F4D4153 
+ 1629      4B00
+ 1630              	.LASF11:
+ 1631 00f8 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1631      206C6F6E 
+ 1631      6720756E 
+ 1631      7369676E 
+ 1631      65642069 
+ 1632              	.LASF99:
+ 1633 010f 70657269 		.ascii	"periTrCmdOffset\000"
+ 1633      5472436D 
+ 1633      644F6666 
+ 1633      73657400 
+ 1634              	.LASF26:
+ 1635 011f 4346475F 		.ascii	"CFG_IN\000"
+ 1635      494E00
+ 1636              	.LASF123:
+ 1637 0126 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1637      73537973 
+ 1637      5469636B 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 48
+
+
+ 1637      43746C4F 
+ 1637      66667365 
+ 1638              	.LASF67:
+ 1639 013c 63707573 		.ascii	"cpussDwChNr\000"
+ 1639      73447743 
+ 1639      684E7200 
+ 1640              	.LASF84:
+ 1641 0148 666C6173 		.ascii	"flashPipeRequired\000"
+ 1641      68506970 
+ 1641      65526571 
+ 1641      75697265 
+ 1641      6400
+ 1642              	.LASF88:
+ 1643 015a 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1643      6843746C 
+ 1643      4D61696E 
+ 1643      57733046 
+ 1643      72657100 
+ 1644              	.LASF14:
+ 1645 016e 696E7431 		.ascii	"int16_t\000"
+ 1645      365F7400 
+ 1646              	.LASF10:
+ 1647 0176 6C6F6E67 		.ascii	"long long int\000"
+ 1647      206C6F6E 
+ 1647      6720696E 
+ 1647      7400
+ 1648              	.LASF2:
+ 1649 0184 7369676E 		.ascii	"signed char\000"
+ 1649      65642063 
+ 1649      68617200 
+ 1650              	.LASF104:
+ 1651 0190 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1651      44697643 
+ 1651      6D645479 
+ 1651      70655365 
+ 1651      6C506F73 
+ 1652              	.LASF50:
+ 1653 01a5 70726F74 		.ascii	"protBase\000"
+ 1653      42617365 
+ 1653      00
+ 1654              	.LASF62:
+ 1655 01ae 69706356 		.ascii	"ipcVersion\000"
+ 1655      65727369 
+ 1655      6F6E00
+ 1656              	.LASF145:
+ 1657 01b9 43795F47 		.ascii	"Cy_GPIO_Write\000"
+ 1657      50494F5F 
+ 1657      57726974 
+ 1657      6500
+ 1658              	.LASF51:
+ 1659 01c7 6873696F 		.ascii	"hsiomBase\000"
+ 1659      6D426173 
+ 1659      6500
+ 1660              	.LASF7:
+ 1661 01d1 6C6F6E67 		.ascii	"long int\000"
+ 1661      20696E74 
+ 1661      00
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 49
+
+
+ 1662              	.LASF82:
+ 1663 01da 63727970 		.ascii	"cryptoMemSize\000"
+ 1663      746F4D65 
+ 1663      6D53697A 
+ 1663      6500
+ 1664              	.LASF48:
+ 1665 01e8 70657269 		.ascii	"periBase\000"
+ 1665      42617365 
+ 1665      00
+ 1666              	.LASF80:
+ 1667 01f1 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1667      6D53696D 
+ 1667      6F507265 
+ 1667      73656E74 
+ 1667      00
+ 1668              	.LASF70:
+ 1669 0202 63707573 		.ascii	"cpussFmIrq\000"
+ 1669      73466D49 
+ 1669      727100
+ 1670              	.LASF136:
+ 1671 020d 646F7562 		.ascii	"double\000"
+ 1671      6C6500
+ 1672              	.LASF109:
+ 1673 0214 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1673      44697631 
+ 1673      365F3543 
+ 1673      746C4F66 
+ 1673      66736574 
+ 1674              	.LASF73:
+ 1675 0229 73727373 		.ascii	"srssNumPll\000"
+ 1675      4E756D50 
+ 1675      6C6C00
+ 1676              	.LASF146:
+ 1677 0234 6D61696E 		.ascii	"main\000"
+ 1677      00
+ 1678              	.LASF107:
+ 1679 0239 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1679      44697638 
+ 1679      43746C4F 
+ 1679      66667365 
+ 1679      7400
+ 1680              	.LASF114:
+ 1681 024b 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1681      50727443 
+ 1681      66674F75 
+ 1681      744F6666 
+ 1681      73657400 
+ 1682              	.LASF47:
+ 1683 025f 666C6173 		.ascii	"flashcBase\000"
+ 1683      68634261 
+ 1683      736500
+ 1684              	.LASF8:
+ 1685 026a 5F5F7569 		.ascii	"__uint32_t\000"
+ 1685      6E743332 
+ 1685      5F7400
+ 1686              	.LASF77:
+ 1687 0275 70617373 		.ascii	"passSarChannels\000"
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 50
+
+
+ 1687      53617243 
+ 1687      68616E6E 
+ 1687      656C7300 
+ 1688              	.LASF4:
+ 1689 0285 5F5F696E 		.ascii	"__int16_t\000"
+ 1689      7431365F 
+ 1689      7400
+ 1690              	.LASF140:
+ 1691 028f 76616C75 		.ascii	"value\000"
+ 1691      6500
+ 1692              	.LASF115:
+ 1693 0295 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1693      50727443 
+ 1693      66675369 
+ 1693      6F4F6666 
+ 1693      73657400 
+ 1694              	.LASF119:
+ 1695 02a9 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1695      73436D30 
+ 1695      53746174 
+ 1695      75734F66 
+ 1695      66736574 
+ 1696              	.LASF12:
+ 1697 02be 756E7369 		.ascii	"unsigned int\000"
+ 1697      676E6564 
+ 1697      20696E74 
+ 1697      00
+ 1698              	.LASF20:
+ 1699 02cb 4F55545F 		.ascii	"OUT_INV\000"
+ 1699      494E5600 
+ 1700              	.LASF15:
+ 1701 02d3 75696E74 		.ascii	"uint16_t\000"
+ 1701      31365F74 
+ 1701      00
+ 1702              	.LASF133:
+ 1703 02dc 63686172 		.ascii	"char_t\000"
+ 1703      5F7400
+ 1704              	.LASF100:
+ 1705 02e3 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1705      5472436D 
+ 1705      64477253 
+ 1705      656C4D73 
+ 1705      6B00
+ 1706              	.LASF9:
+ 1707 02f5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1707      20756E73 
+ 1707      69676E65 
+ 1707      6420696E 
+ 1707      7400
+ 1708              	.LASF65:
+ 1709 0307 63707573 		.ascii	"cpussIpcNr\000"
+ 1709      73497063 
+ 1709      4E7200
+ 1710              	.LASF22:
+ 1711 0312 494E5452 		.ascii	"INTR_MASK\000"
+ 1711      5F4D4153 
+ 1711      4B00
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 51
+
+
+ 1712              	.LASF52:
+ 1713 031c 6770696F 		.ascii	"gpioBase\000"
+ 1713      42617365 
+ 1713      00
+ 1714              	.LASF41:
+ 1715 0325 5644445F 		.ascii	"VDD_INTR_SET\000"
+ 1715      494E5452 
+ 1715      5F534554 
+ 1715      00
+ 1716              	.LASF90:
+ 1717 0332 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 1717      6843746C 
+ 1717      4D61696E 
+ 1717      57733246 
+ 1717      72657100 
+ 1718              	.LASF101:
+ 1719 0346 70657269 		.ascii	"periTrGrOffset\000"
+ 1719      54724772 
+ 1719      4F666673 
+ 1719      657400
+ 1720              	.LASF23:
+ 1721 0355 494E5452 		.ascii	"INTR_MASKED\000"
+ 1721      5F4D4153 
+ 1721      4B454400 
+ 1722              	.LASF128:
+ 1723 0361 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1723      7352616D 
+ 1723      3143746C 
+ 1723      3000
+ 1724              	.LASF102:
+ 1725 036f 70657269 		.ascii	"periTrGrSize\000"
+ 1725      54724772 
+ 1725      53697A65 
+ 1725      00
+ 1726              	.LASF60:
+ 1727 037c 6770696F 		.ascii	"gpioVersion\000"
+ 1727      56657273 
+ 1727      696F6E00 
+ 1728              	.LASF132:
+ 1729 0388 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1729      74635F64 
+ 1729      65766963 
+ 1729      655F7400 
+ 1730              	.LASF120:
+ 1731 0398 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1731      73436D34 
+ 1731      50777243 
+ 1731      746C4F66 
+ 1731      66736574 
+ 1732              	.LASF78:
+ 1733 03ad 65704D6F 		.ascii	"epMonitorNr\000"
+ 1733      6E69746F 
+ 1733      724E7200 
+ 1734              	.LASF125:
+ 1735 03b9 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 1735      73436D34 
+ 1735      4E6D6943 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 52
+
+
+ 1735      746C4F66 
+ 1735      66736574 
+ 1736              	.LASF121:
+ 1737 03ce 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1737      73547269 
+ 1737      6D52616D 
+ 1737      43746C4F 
+ 1737      66667365 
+ 1738              	.LASF116:
+ 1739 03e4 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 1739      73436D30 
+ 1739      436C6F63 
+ 1739      6B43746C 
+ 1739      4F666673 
+ 1740              	.LASF25:
+ 1741 03fb 494E5452 		.ascii	"INTR_CFG\000"
+ 1741      5F434647 
+ 1741      00
+ 1742              	.LASF24:
+ 1743 0404 494E5452 		.ascii	"INTR_SET\000"
+ 1743      5F534554 
+ 1743      00
+ 1744              	.LASF56:
+ 1745 040d 63707573 		.ascii	"cpussVersion\000"
+ 1745      73566572 
+ 1745      73696F6E 
+ 1745      00
+ 1746              	.LASF138:
+ 1747 041a 62617365 		.ascii	"base\000"
+ 1747      00
+ 1748              	.LASF63:
+ 1749 041f 70657269 		.ascii	"periVersion\000"
+ 1749      56657273 
+ 1749      696F6E00 
+ 1750              	.LASF37:
+ 1751 042b 5644445F 		.ascii	"VDD_ACTIVE\000"
+ 1751      41435449 
+ 1751      564500
+ 1752              	.LASF17:
+ 1753 0436 73697A65 		.ascii	"sizetype\000"
+ 1753      74797065 
+ 1753      00
+ 1754              	.LASF93:
+ 1755 043f 64774368 		.ascii	"dwChOffset\000"
+ 1755      4F666673 
+ 1755      657400
+ 1756              	.LASF68:
+ 1757 044a 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1757      73466C61 
+ 1757      73685061 
+ 1757      53697A65 
+ 1757      00
+ 1758              	.LASF106:
+ 1759 045b 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1759      44697643 
+ 1759      6D645061 
+ 1759      54797065 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 53
+
+
+ 1759      53656C50 
+ 1760              	.LASF42:
+ 1761 0472 4750494F 		.ascii	"GPIO_V1_Type\000"
+ 1761      5F56315F 
+ 1761      54797065 
+ 1761      00
+ 1762              	.LASF129:
+ 1763 047f 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1763      7352616D 
+ 1763      3243746C 
+ 1763      3000
+ 1764              	.LASF64:
+ 1765 048d 70726F74 		.ascii	"protVersion\000"
+ 1765      56657273 
+ 1765      696F6E00 
+ 1766              	.LASF97:
+ 1767 0499 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 1767      61747573 
+ 1767      43684964 
+ 1767      78506F73 
+ 1767      00
+ 1768              	.LASF79:
+ 1769 04aa 75646250 		.ascii	"udbPresent\000"
+ 1769      72657365 
+ 1769      6E7400
+ 1770              	.LASF59:
+ 1771 04b5 666C6173 		.ascii	"flashcVersion\000"
+ 1771      68635665 
+ 1771      7273696F 
+ 1771      6E00
+ 1772              	.LASF55:
+ 1773 04c3 63727970 		.ascii	"cryptoBase\000"
+ 1773      746F4261 
+ 1773      736500
+ 1774              	.LASF76:
+ 1775 04ce 736D6966 		.ascii	"smifDeviceNr\000"
+ 1775      44657669 
+ 1775      63654E72 
+ 1775      00
+ 1776              	.LASF144:
+ 1777 04db 5F5F656E 		.ascii	"__enable_irq\000"
+ 1777      61626C65 
+ 1777      5F697271 
+ 1777      00
+ 1778              	.LASF18:
+ 1779 04e8 4F55545F 		.ascii	"OUT_CLR\000"
+ 1779      434C5200 
+ 1780              	.LASF135:
+ 1781 04f0 666C6F61 		.ascii	"float\000"
+ 1781      7400
+ 1782              	.LASF98:
+ 1783 04f6 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 1783      61747573 
+ 1783      43684964 
+ 1783      784D736B 
+ 1783      00
+ 1784              	.LASF30:
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 54
+
+
+ 1785 0507 4346475F 		.ascii	"CFG_IN_GPIO5V\000"
+ 1785      494E5F47 
+ 1785      50494F35 
+ 1785      5600
+ 1786              	.LASF28:
+ 1787 0515 4346475F 		.ascii	"CFG_SIO\000"
+ 1787      53494F00 
+ 1788              	.LASF31:
+ 1789 051d 52455345 		.ascii	"RESERVED1\000"
+ 1789      52564544 
+ 1789      3100
+ 1790              	.LASF147:
+ 1791 0527 63795F64 		.ascii	"cy_device\000"
+ 1791      65766963 
+ 1791      6500
+ 1792              	.LASF126:
+ 1793 0531 63707573 		.ascii	"cpussRomCtl\000"
+ 1793      73526F6D 
+ 1793      43746C00 
+ 1794              	.LASF96:
+ 1795 053d 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 1795      43746C50 
+ 1795      7265656D 
+ 1795      70746162 
+ 1795      6C65506F 
+ 1796              	.LASF49:
+ 1797 0553 75646242 		.ascii	"udbBase\000"
+ 1797      61736500 
+ 1798              	.LASF137:
+ 1799 055b 5F426F6F 		.ascii	"_Bool\000"
+ 1799      6C00
+ 1800              	.LASF1:
+ 1801 0561 756E7369 		.ascii	"unsigned char\000"
+ 1801      676E6564 
+ 1801      20636861 
+ 1801      7200
+ 1802              	.LASF124:
+ 1803 056f 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1803      73436D30 
+ 1803      4E6D6943 
+ 1803      746C4F66 
+ 1803      66736574 
+ 1804              	.LASF92:
+ 1805 0584 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 1805      6843746C 
+ 1805      4D61696E 
+ 1805      57733446 
+ 1805      72657100 
+ 1806              	.LASF143:
+ 1807 0598 433A5C55 		.ascii	"C:\\Users\\guill\\Escritorio\\CSE121\\Lab1.2.cydsn\000"
+ 1807      73657273 
+ 1807      5C677569 
+ 1807      6C6C5C45 
+ 1807      73637269 
+ 1808              	.LASF0:
+ 1809 05c6 73686F72 		.ascii	"short int\000"
+ 1809      7420696E 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 55
+
+
+ 1809      7400
+ 1810              	.LASF29:
+ 1811 05d0 52455345 		.ascii	"RESERVED\000"
+ 1811      52564544 
+ 1811      00
+ 1812              	.LASF103:
+ 1813 05d9 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 1813      44697643 
+ 1813      6D644469 
+ 1813      7653656C 
+ 1813      4D736B00 
+ 1814              	.LASF38:
+ 1815 05ed 5644445F 		.ascii	"VDD_INTR\000"
+ 1815      494E5452 
+ 1815      00
+ 1816              	.LASF139:
+ 1817 05f6 70696E4E 		.ascii	"pinNum\000"
+ 1817      756D00
+ 1818              	.LASF74:
+ 1819 05fd 73727373 		.ascii	"srssNumHfroot\000"
+ 1819      4E756D48 
+ 1819      66726F6F 
+ 1819      7400
+ 1820              	.LASF87:
+ 1821 060b 666C6173 		.ascii	"flashEraseDelay\000"
+ 1821      68457261 
+ 1821      73654465 
+ 1821      6C617900 
+ 1822              	.LASF16:
+ 1823 061b 75696E74 		.ascii	"uint32_t\000"
+ 1823      33325F74 
+ 1823      00
+ 1824              	.LASF148:
+ 1825 0624 43795F53 		.ascii	"Cy_SysLib_Delay\000"
+ 1825      79734C69 
+ 1825      625F4465 
+ 1825      6C617900 
+ 1826              	.LASF141:
+ 1827 0634 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1827      43313120 
+ 1827      352E342E 
+ 1827      31203230 
+ 1827      31363036 
+ 1828 0667 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1828      20726576 
+ 1828      6973696F 
+ 1828      6E203233 
+ 1828      37373135 
+ 1829 069a 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1829      67202D66 
+ 1829      66756E63 
+ 1829      74696F6E 
+ 1829      2D736563 
+ 1830              	.LASF45:
+ 1831 06c6 6C6F6E67 		.ascii	"long double\000"
+ 1831      20646F75 
+ 1831      626C6500 
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 56
+
+
+ 1832              	.LASF134:
+ 1833 06d2 63686172 		.ascii	"char\000"
+ 1833      00
+ 1834              	.LASF33:
+ 1835 06d7 494E5452 		.ascii	"INTR_CAUSE0\000"
+ 1835      5F434155 
+ 1835      53453000 
+ 1836              	.LASF34:
+ 1837 06e3 494E5452 		.ascii	"INTR_CAUSE1\000"
+ 1837      5F434155 
+ 1837      53453100 
+ 1838              	.LASF35:
+ 1839 06ef 494E5452 		.ascii	"INTR_CAUSE2\000"
+ 1839      5F434155 
+ 1839      53453200 
+ 1840              	.LASF36:
+ 1841 06fb 494E5452 		.ascii	"INTR_CAUSE3\000"
+ 1841      5F434155 
+ 1841      53453300 
+ 1842              	.LASF127:
+ 1843 0707 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 1843      7352616D 
+ 1843      3043746C 
+ 1843      3000
+ 1844              	.LASF43:
+ 1845 0715 4750494F 		.ascii	"GPIO_PRT_Type\000"
+ 1845      5F505254 
+ 1845      5F547970 
+ 1845      6500
+ 1846              	.LASF5:
+ 1847 0723 5F5F7569 		.ascii	"__uint16_t\000"
+ 1847      6E743136 
+ 1847      5F7400
+ 1848              	.LASF19:
+ 1849 072e 4F55545F 		.ascii	"OUT_SET\000"
+ 1849      53455400 
+ 1850              	.LASF108:
+ 1851 0736 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 1851      44697631 
+ 1851      3643746C 
+ 1851      4F666673 
+ 1851      657400
+ 1852              	.LASF61:
+ 1853 0749 6873696F 		.ascii	"hsiomVersion\000"
+ 1853      6D566572 
+ 1853      73696F6E 
+ 1853      00
+ 1854              	.LASF40:
+ 1855 0756 5644445F 		.ascii	"VDD_INTR_MASKED\000"
+ 1855      494E5452 
+ 1855      5F4D4153 
+ 1855      4B454400 
+ 1856              	.LASF21:
+ 1857 0766 494E5452 		.ascii	"INTR\000"
+ 1857      00
+ 1858              	.LASF89:
+ 1859 076b 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 57
+
+
+ 1859      6843746C 
+ 1859      4D61696E 
+ 1859      57733146 
+ 1859      72657100 
+ 1860              	.LASF6:
+ 1861 077f 73686F72 		.ascii	"short unsigned int\000"
+ 1861      7420756E 
+ 1861      7369676E 
+ 1861      65642069 
+ 1861      6E7400
+ 1862              	.LASF94:
+ 1863 0792 64774368 		.ascii	"dwChSize\000"
+ 1863      53697A65 
+ 1863      00
+ 1864              	.LASF130:
+ 1865 079b 69706353 		.ascii	"ipcStructSize\000"
+ 1865      74727563 
+ 1865      7453697A 
+ 1865      6500
+ 1866              	.LASF69:
+ 1867 07a9 63707573 		.ascii	"cpussIpc0Irq\000"
+ 1867      73497063 
+ 1867      30497271 
+ 1867      00
+ 1868              	.LASF112:
+ 1869 07b6 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 1869      50727443 
+ 1869      66674F66 
+ 1869      66736574 
+ 1869      00
+ 1870              	.LASF71:
+ 1871 07c7 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 1871      734E6F74 
+ 1871      436F6E6E 
+ 1871      65637465 
+ 1871      64497271 
+ 1872              	.LASF85:
+ 1873 07dc 666C6173 		.ascii	"flashWriteDelay\000"
+ 1873      68577269 
+ 1873      74654465 
+ 1873      6C617900 
+ 1874              	.LASF13:
+ 1875 07ec 75696E74 		.ascii	"uint8_t\000"
+ 1875      385F7400 
+ 1876              	.LASF118:
+ 1877 07f4 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 1877      73436D34 
+ 1877      53746174 
+ 1877      75734F66 
+ 1877      66736574 
+ 1878              	.LASF111:
+ 1879 0809 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 1879      50727449 
+ 1879      6E747243 
+ 1879      66674F66 
+ 1879      66736574 
+ 1880              	.LASF27:
+ARM GAS  C:\Users\guill\AppData\Local\Temp\ccxMbJ8B.s 			page 58
+
+
+ 1881 081e 4346475F 		.ascii	"CFG_OUT\000"
+ 1881      4F555400 
+ 1882              	.LASF44:
+ 1883 0826 4750494F 		.ascii	"GPIO_Type\000"
+ 1883      5F547970 
+ 1883      6500
+ 1884              	.LASF122:
+ 1885 0830 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 1885      73547269 
+ 1885      6D526F6D 
+ 1885      43746C4F 
+ 1885      66667365 
+ 1886              	.LASF72:
+ 1887 0846 73727373 		.ascii	"srssNumClkpath\000"
+ 1887      4E756D43 
+ 1887      6C6B7061 
+ 1887      746800
+ 1888              	.LASF58:
+ 1889 0855 64775665 		.ascii	"dwVersion\000"
+ 1889      7273696F 
+ 1889      6E00
+ 1890              	.LASF54:
+ 1891 085f 69706342 		.ascii	"ipcBase\000"
+ 1891      61736500 
+ 1892              	.LASF105:
+ 1893 0867 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 1893      44697643 
+ 1893      6D645061 
+ 1893      44697653 
+ 1893      656C506F 
+ 1894              	.LASF86:
+ 1895 087d 666C6173 		.ascii	"flashProgramDelay\000"
+ 1895      6850726F 
+ 1895      6772616D 
+ 1895      44656C61 
+ 1895      7900
+ 1896              	.LASF83:
+ 1897 088f 666C6173 		.ascii	"flashRwwRequired\000"
+ 1897      68527777 
+ 1897      52657175 
+ 1897      69726564 
+ 1897      00
+ 1898              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

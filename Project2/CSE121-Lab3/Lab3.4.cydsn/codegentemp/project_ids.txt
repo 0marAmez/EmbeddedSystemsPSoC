@@ -1,0 +1,18 @@
+C:\Users\guill\Escritorio\CSE121\Lab1.0.cydsn\Lab1.0.cyprj|0dd8534b-f73f-4820-9a31-8971252e4b35
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|c21bf996-a699-4fc1-8ff9-eb60dae34426
+C:\Users\guill\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|896d5b53-3dc2-4078-b8fa-c2aa84747dca
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|78b2dfe8-5039-4c78-8b9a-6733104a2b94
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b8be1d11-5f53-44c8-80a4-c31da5983eb3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|01aa3b9a-0043-43c5-9a8e-9d4c26f7f757
+C:\Users\guill\Escritorio\CSE121\Lab1.1.cydsn\Lab1.1.cyprj|293232c1-f42f-43f5-93ab-1b9b33f07383
+C:\Users\guill\Escritorio\CSE121\Lab1.2.cydsn\Lab1.2.cyprj|c1632435-da5c-44a9-95e2-2bd6cb455902
+C:\Users\guill\Escritorio\CSE121\Lab1.3.cydsn\Lab1.3.cyprj|3c000f90-9750-430d-a7ab-186147191ef4
+C:\Users\guill\Escritorio\CSE121\Lab1.4.cydsn\Lab1.4.cyprj|708ff46e-6ebc-4d1a-a652-4dd65a0f52f7
+C:\Users\guill\Escritorio\CSE121\Lab2.1.cydsn\Lab2.1.cyprj|b6b21420-6291-4bc9-9388-77f83e0da3a1
+C:\Users\guill\Escritorio\CSE121\Lab2.2.cydsn\Lab2.2.cyprj|321949fe-205a-43a1-8024-57c6b6f45dce
+C:\Users\guill\Escritorio\CSE121\Lab2.3.cydsn\Lab2.3.cyprj|7ea39332-12a7-413b-b4e7-e2268b8a5cc5
+C:\Users\guill\Escritorio\CSE121\Lab2.4.cydsn\Lab2.4.cyprj|6a1c250d-b810-40e6-9d07-2a447ce0d316
+C:\Users\guill\Escritorio\CSE121\Lab3.1.cydsn\Lab3.1.cyprj|f8052a38-0475-4ac1-b17b-322bfb33d0b4
+C:\Users\guill\Escritorio\CSE121\Lab3.2.cydsn\Lab3.2.cyprj|a1b8d766-5ea5-49e2-af5f-e25c9c19701e
+C:\Users\guill\Escritorio\CSE121\Lab3.3.cydsn\Lab3.3.cyprj|d74518f2-3b1f-4709-bfeb-ad5ca1248b75
+C:\Users\guill\Escritorio\CSE121\Lab3.4.cydsn\Lab3.4.cyprj|e046862b-b953-4e9b-9d98-e2b91ab9b56d
